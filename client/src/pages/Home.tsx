@@ -30,6 +30,13 @@ const pages = [
     description: "For the hesitant buyer who fears fitment issues, legal problems, or making the wrong choice. Trust-driven, reassurance-focused.",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663451266806/Erre6hcnrPtPVTwXw7nEHY/hero-confidence-AfyfH8Nn7VSkg4koVxUiUm.webp",
   },
+  {
+    path: "/first-build",
+    title: "First Build Frederik",
+    subtitle: "Solution Aware",
+    description: "For the 19-23yo stuck in research paralysis. He knows what he wants but can't decide. One recommendation, objections killed, decision collapsed.",
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663451266806/Erre6hcnrPtPVTwXw7nEHY/hero-build-journey-XKUJ69yMM7aY658E5JcN7u.webp",
+  },
 ];
 
 const fadeUp = {
@@ -70,7 +77,7 @@ export default function Home() {
               Top-of-Funnel Campaign Pages
             </p>
             <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold leading-[0.95] tracking-tight text-foreground mb-6">
-              3 Landing Pages<br />
+              4 Landing Pages<br />
               <span className="text-nc-red">for New Audiences</span>
             </h1>
             <p className="text-muted-foreground text-lg md:text-xl max-w-2xl leading-relaxed">
