@@ -1,18 +1,26 @@
 /*
  * DESIGN: Nardocar Brand — Dark base, red (#FF0000) accents, Poppins + Roboto
- * LP1: "The Aesthetic Permission Slip" — Problem Unaware
+ * LP1: "The Aesthetic Permission Slip" — Completely Unaware
  * Target: Den Visuelle Perfektionist (18-35, stance/fitment)
  *
- * COPY STRUCTURE (PDA — delayed brand reveal):
- *   1. Hero — Ren følelse. Ingen brand. Ingen produkt.
- *   2. Sandheden — Validér lysten. Agitér spændingen.
- *   3. Følelsen — Mal det ønskede resultat. Før/efter.
- *   4. Social proof — Rigtige builds, rigtige mennesker. Stadig intet salg.
- *   5. Broen — NU introducerer vi Nardocar.
+ * SCHWARTZ UNAWARE STRATEGY:
+ *   - No product, no price, no brand in headline
+ *   - Identification headline: call the market together
+ *   - Echo emotion/attitude that picks them from the crowd
+ *   - Each paragraph pulls into the next — steady progression:
+ *     identification → desire crystallization → solution at hand → product
+ *   - Story approach: "They Laughed When I Sat Down at the Piano" pattern
+ *   - Give words to a hidden dream they can't yet verbalize
+ *
+ * COPY STRUCTURE:
+ *   1. Hero — Identification. Du er typen. Ingen produkt. Ingen brand.
+ *   2. Story — Giv ord til drømmen. Mal scenen de lever i hver dag.
+ *   3. Intensification — Projicér triumfen. Følelsen af resultatet.
+ *   4. Social proof — Identifikation, ikke produktanmeldelser.
+ *   5. Broen — NU introducerer vi Nardocar. Sent. Fortjent.
  *   6. CTA + Trust signals.
  *
  * COPY TONE: Talesprog. Kan siges højt. Kort-lang sætningsvariation.
- * Brug kundens eget sprog fra swipe file.
  */
 import { motion, useScroll, useTransform } from "framer-motion";
 import { ArrowRight, ChevronDown, Shield, Truck, Star, Headphones } from "lucide-react";
@@ -41,7 +49,10 @@ export default function AestheticLP() {
     <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
 
       {/* ═══════════════════════════════════════════════════════════════
-          SECTION 1: HERO — Ren følelse. Ingen brand. Ingen produkt.
+          SECTION 1: HERO — Identification. Call the market together.
+          Schwartz: "You are echoing an emotion, an attitude, a
+          satisfaction that picks people out from the crowd."
+          No product. No brand. Just: I see you.
       ═══════════════════════════════════════════════════════════════ */}
       <section ref={heroRef} className="relative h-screen flex items-end overflow-hidden">
         <motion.div className="absolute inset-0" style={{ y: heroImgY }}>
@@ -62,11 +73,11 @@ export default function AestheticLP() {
             className="max-w-3xl"
           >
             <h1 className="font-display text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold leading-[0.92] tracking-tight mb-6">
-              Du behøver ikke<br />
-              pakke det ind i <span className="text-nc-red">performance.</span>
+              Du ser det<br />
+              <span className="text-nc-red">ingen andre ser.</span>
             </h1>
             <p className="text-foreground/65 text-lg md:text-xl max-w-xl leading-relaxed mb-2">
-              Det handler om looket. Det har det altid gjort.
+              Og du har aldrig kunnet lade være.
             </p>
           </motion.div>
         </div>
@@ -83,7 +94,10 @@ export default function AestheticLP() {
       <div className="red-streak" />
 
       {/* ═══════════════════════════════════════════════════════════════
-          SECTION 2: SANDHEDEN — Validér lysten. Sig det højt.
+          SECTION 2: THE HIDDEN DREAM — Give words to what they feel
+          but have never said out loud. Story approach.
+          Schwartz: "You are telling them who they are. You are
+          defining them for themselves."
       ═══════════════════════════════════════════════════════════════ */}
       <section className="py-24 md:py-36 relative grain-overlay">
         <div className="container relative z-10">
@@ -95,24 +109,27 @@ export default function AestheticLP() {
             className="max-w-3xl"
           >
             <h2 className="font-display text-3xl md:text-5xl font-bold leading-tight tracking-tight mb-8">
-              Alle snakker om{" "}
-              <span className="text-nc-red">hestekræfter.</span>
+              Hver gang du ser en bil{" "}
+              <span className="text-nc-red">ser du alt det den kunne være.</span>
             </h2>
             <div className="space-y-5 text-foreground/65 text-lg md:text-xl leading-relaxed">
               <p>
-                Men det er ikke det, du kigger på.
+                Du kører bag en tilfældig bil i trafikken. Du lægger mærke til
+                hvordan den sidder. For højt. For kedeligt. Og du tænker:
+                med de rigtige fælge, lidt lavere, lidt bredere — den bil
+                ville være en helt anden.
               </p>
               <p>
-                Du kigger på wheel gap. På proportionerne. På den måde lyset
-                fanger lakken når den sidder <em>præcis</em> rigtigt.
+                Du gør det hele tiden. Du kan ikke lade være.
               </p>
               <p>
-                Ikke hvor hurtigt den er.<br />
-                Men hvordan den føles.
+                Du zoomer ind på billeder online og checker om hjulene sidder
+                flush med skærmkanten. Du scroller forbi hundrede biler
+                og stopper kun ved dem der har <em>det der</em>.
               </p>
               <p className="text-foreground/80 font-medium">
-                Hestekræfter er det folk snakker om.<br />
-                Men det er ikke det, der får folk til at kigge.
+                Det er ikke noget du har lært.<br />
+                Det er noget du bare har.
               </p>
             </div>
           </motion.div>
@@ -122,7 +139,10 @@ export default function AestheticLP() {
       <div className="red-streak mx-8" />
 
       {/* ═══════════════════════════════════════════════════════════════
-          SECTION 3: FØLELSEN — Mal resultatet. Før/efter.
+          SECTION 3: PROJECT THE TRIUMPH — Paint the result they want.
+          Schwartz: "Projecting an ultimate triumph that the
+          prospect will identify with."
+          Still no product. Just the vision realized.
       ═══════════════════════════════════════════════════════════════ */}
       <section className="py-24 md:py-36 relative">
         <div className="container">
@@ -134,22 +154,27 @@ export default function AestheticLP() {
               viewport={{ once: true, margin: "-80px" }}
             >
               <h2 className="font-display text-3xl md:text-5xl font-bold leading-tight tracking-tight mb-6">
-                Du ruller op.{" "}
-                <span className="text-nc-red">Alle kigger.</span>
+                Så forestil dig{" "}
+                <span className="text-nc-red">den dag det er din.</span>
               </h2>
               <div className="space-y-5 text-foreground/65 text-lg leading-relaxed">
                 <p>
-                  Det perfekte drop. Hjulene der sidder flush med skærmkanten.
-                  Den der subtile aggression der får folk til at kigge to gange.
+                  Du drejer nøglen. Bakker ud. Og for første gang
+                  ser din bil ud præcis som du altid har set den
+                  for dit indre blik.
                 </p>
                 <p>
-                  Ikke fordi du prøver at flexe.
-                  Men fordi din bil endelig ser ud som den altid burde have gjort.
+                  Du ruller ned ad gaden. Nogen drejer hovedet.
+                  Og du ved godt hvorfor. Ikke fordi den er hurtig.
+                  Ikke fordi den er dyr.
                 </p>
                 <p>
-                  Det er ikke forfængelighed. Det er en vision.
-                  Og forskellen mellem en stock bil og <em>din</em> bil
-                  er ét valg.
+                  Men fordi den endelig er <em>rigtig</em>.
+                </p>
+                <p className="text-foreground/80 font-medium">
+                  Det der sidder i maven — den uro mellem hvad din bil er
+                  og hvad den kunne være — den forsvinder.
+                  Fordi mellemrummet er lukket.
                 </p>
               </div>
             </motion.div>
@@ -169,10 +194,10 @@ export default function AestheticLP() {
                 />
               </div>
               <div className="absolute top-4 left-4 bg-background/80 backdrop-blur-sm px-3 py-1.5 rounded-sm">
-                <span className="text-xs font-display uppercase tracking-wider text-muted-foreground">Fabrikken</span>
+                <span className="text-xs font-display uppercase tracking-wider text-muted-foreground">Før</span>
               </div>
               <div className="absolute top-4 right-4 bg-nc-red backdrop-blur-sm px-3 py-1.5 rounded-sm">
-                <span className="text-xs font-display uppercase tracking-wider text-white font-semibold">Din</span>
+                <span className="text-xs font-display uppercase tracking-wider text-white font-semibold">Efter</span>
               </div>
             </motion.div>
           </div>
@@ -182,7 +207,10 @@ export default function AestheticLP() {
       <div className="red-streak mx-8" />
 
       {/* ═══════════════════════════════════════════════════════════════
-          SECTION 4: SOCIAL PROOF — Rigtige builds. Rigtige folk.
+          SECTION 4: IDENTIFICATION PROOF — Not product reviews.
+          People who felt exactly what YOU feel — and acted on it.
+          Schwartz: Identification, not desire. Show them people
+          like themselves.
       ═══════════════════════════════════════════════════════════════ */}
       <section className="py-24 md:py-36 relative grain-overlay">
         <div className="container relative z-10">
@@ -194,12 +222,13 @@ export default function AestheticLP() {
             className="mb-12"
           >
             <h2 className="font-display text-3xl md:text-5xl font-bold leading-tight tracking-tight mb-6">
-              De stod præcis<br />
-              <span className="text-nc-red">hvor du står nu.</span>
+              Du er ikke den eneste<br />
+              <span className="text-nc-red">der tænker sådan.</span>
             </h2>
             <p className="text-foreground/65 text-lg leading-relaxed max-w-2xl">
-              Rigtige biler. Rigtige ejere. Alle sammen startede med den samme følelse
-              - at bilen kunne mere end det fabrikken sendte den ud med.
+              De her mennesker gik rundt med det samme blik. Det samme jag.
+              Den samme uro over en bil der ikke helt var <em>deres</em> endnu.
+              Indtil den var.
             </p>
           </motion.div>
 
@@ -226,17 +255,17 @@ export default function AestheticLP() {
           >
             {[
               {
-                quote: "Jeg vidste præcis hvad jeg ville have. Manglede bare nogen der fattede det.",
+                quote: "Jeg kunne altid se det for mig. Problemet var aldrig visionen — det var at finde nogen der forstod den.",
                 name: "Mikkel S.",
                 car: "VW Golf MK7",
               },
               {
-                quote: "Folk siger 'det er bare en bil.' Nej. Det er det eneste i mit liv der er 100% mit eget valg.",
+                quote: "Folk siger 'det er bare en bil.' Men det er det eneste i mit liv der er 100% mit eget udtryk. Hver eneste detalje.",
                 name: "Jonas K.",
                 car: "BMW E46",
               },
               {
-                quote: "Første gang jeg parkerede den efter droppet, stod jeg bare og gloede i fem minutter.",
+                quote: "Den dag jeg parkerede den og bare stod og gloede — det var den dag jeg vidste at det hele var det værd.",
                 name: "Emil R.",
                 car: "Audi A4 B8",
               },
@@ -266,7 +295,9 @@ export default function AestheticLP() {
       <div className="red-streak mx-8" />
 
       {/* ═══════════════════════════════════════════════════════════════
-          SECTION 5: BROEN — Nu introducerer vi Nardocar.
+          SECTION 5: THE BRIDGE — NOW we reveal Nardocar.
+          The prospect has identified. The desire is crystallized.
+          Only now does the product enter — as the inevitable answer.
       ═══════════════════════════════════════════════════════════════ */}
       <section className="py-24 md:py-36 relative">
         <div className="container relative z-10">
@@ -288,14 +319,14 @@ export default function AestheticLP() {
             />
 
             <h2 className="font-display text-3xl md:text-5xl font-bold leading-tight tracking-tight mb-6">
-              Vi bygger ikke biler.<br />
-              <span className="text-nc-red">Vi leverer delene til din vision.</span>
+              Det billede du har i hovedet?<br />
+              <span className="text-nc-red">Vi har delene til det.</span>
             </h2>
             <p className="text-foreground/65 text-lg leading-relaxed max-w-2xl mx-auto mb-12">
-              Over 150.000 dele. Verificeret fitment til din model.
-              TÜV/EC-papirer der holder til syn.
-              Og et team af bilfolk der forstår hvad du går efter
-              - fordi de selv har været der.
+              Over 150.000 dele. Verificeret til din model, så du slipper for
+              gætværk og fejlkøb. TÜV/EC-papirer der holder til syn.
+              Og et team af bilfolk der forstår præcis hvad du går efter
+              — fordi de selv har stået med det samme blik.
             </p>
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-14">
