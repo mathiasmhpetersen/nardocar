@@ -310,7 +310,7 @@ export default function FirstBuildLP() {
                 icon: Shield,
                 objection: "\"Hvad hvis det ikke passer til min bil?\"",
                 answer:
-                  "Hver del vi sælger er verificeret til din specifikke model og årgang. Fitment-garanti. Passer det ikke, bytter vi det. Ingen diskussion.",
+                  "Har vi anbefalet et produkt, garanterer vi også at det passer til netop din bil. Passer det ikke, bytter vi. Ingen diskussion.",
               },
               {
                 icon: FileCheck,
@@ -464,7 +464,7 @@ export default function FirstBuildLP() {
               {[
                 "Anbefaling til din præcise model",
                 "TÜV/EC-papirer inkluderet",
-                "Fitment-garanti — passer det ikke, bytter vi",
+                "Fitment-garanti — har vi anbefalet det, passer det",
                 "Support fra folk der selv kører modificeret",
               ].map((item) => (
                 <motion.div

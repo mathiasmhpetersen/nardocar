@@ -39,7 +39,7 @@ const fadeUp = {
 const fears = [
   {
     fear: "\"Hvad nu hvis delene ikke passer til min bil?\"",
-    answer: "Alle dele er matchet til din specifikke model. Vi har fitment-garanti - passer det ikke, bytter vi. Ingen diskussion.",
+    answer: "Har vi anbefalet et produkt, garanterer vi også at det passer til netop din bil. Passer det ikke, bytter vi. Ingen diskussion.",
   },
   {
     fear: "\"Kan jeg stadig køre syn med det her?\"",
@@ -55,7 +55,7 @@ const guarantees = [
   {
     icon: ShieldCheck,
     title: "Fitment-garanti",
-    description: "Verificeret til din model. Passer det ikke, bytter vi uden bøvl.",
+    description: "Har vi anbefalet et produkt, garanterer vi også at det passer til netop din bil.",
   },
   {
     icon: Award,
@@ -411,8 +411,8 @@ export default function ConfidenceLP() {
               <span className="text-nc-red">Begynd at bygge.</span>
             </h2>
             <p className="text-muted-foreground text-lg mb-8 max-w-xl mx-auto">
-              150.000+ dele. TÜV/EC-godkendt. Fitment-garanti.
-              Og et team der er klar til at hjælpe dig i gang.
+              150.000+ dele. TÜV/EC-godkendt.
+              Har vi anbefalet det, garanterer vi også at det passer.
             </p>
             <Button
               size="lg"
