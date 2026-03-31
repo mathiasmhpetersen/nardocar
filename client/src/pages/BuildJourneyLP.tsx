@@ -197,8 +197,11 @@ export default function BuildJourneyLP() {
             <h2 className="font-display text-3xl md:text-5xl font-bold leading-tight tracking-tight mb-8">
               <span className="text-nc-red">med performance.</span>
             </h2>
-            <p className="text-foreground/65 text-lg md:text-xl leading-relaxed">
+            <p className="text-foreground/65 text-lg md:text-xl leading-relaxed mb-6">
               Du kigger ikke på din bil og tænker på G-kræfter. Du kigger på wheel gap. På proportionerne. På den måde lyset rammer lakken når den sidder præcis rigtigt. Det er okay. Det er faktisk det mest ærlige du kan sige om din bil.
+            </p>
+            <p className="text-foreground/80 font-medium text-lg md:text-xl">
+              Du ved hvad du vil have. Du mangler bare det rigtige sted at starte.
             </p>
           </motion.div>
         </div>
@@ -207,46 +210,7 @@ export default function BuildJourneyLP() {
       <div className="red-streak mx-8" />
 
       {/* ═══════════════════════════════════════════════════════════════
-          SECTION 4: HISTORIEN — Hvert build starter med en følelse.
-      ═══════════════════════════════════════════════════════════════ */}
-      <section className="py-24 md:py-36 relative grain-overlay">
-        <div className="container relative z-10">
-          <motion.div
-            variants={fadeIn}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-80px" }}
-            className="max-w-3xl"
-          >
-            <h2 className="font-display text-3xl md:text-5xl font-bold leading-tight tracking-tight mb-8">
-              Hvert build starter{" "}
-              <span className="text-nc-red">det samme sted.</span>
-            </h2>
-            <div className="space-y-5 text-foreground/65 text-lg md:text-xl leading-relaxed">
-              <p>
-                Med en følelse. Du kigger på bilen og tænker: den kan mere end det her.
-              </p>
-              <p>
-                Måske er det dit første projekt. Måske er det dit femte. Det er lige meget.
-                Den følelse er den samme hver gang - at der er noget inde i den bil der venter
-                på at komme ud. Og at det er dig der skal finde det.
-              </p>
-              <p>
-                Lørdag morgen. Kaffe. Værktøj. YouTube-guides i baggrunden.
-                For nogen er det bare en hobby. For dig er det meditation.
-              </p>
-              <p className="text-foreground/80 font-medium">
-                Du ved hvad du vil have. Du mangler bare det rigtige sted at starte.
-              </p>
-            </div>
-          </motion.div>
-        </div>
-      </section>
-
-      <div className="red-streak mx-8" />
-
-      {/* ═══════════════════════════════════════════════════════════════
-          SECTION 5: TRINENE — Fire trin. Fokus på deres rejse.
+          SECTION 4: TRINENE — Fire trin. Fokus på deres rejse.
       ═══════════════════════════════════════════════════════════════ */}
       <section className="py-24 md:py-36 relative">
         <div className="container">
@@ -298,7 +262,7 @@ export default function BuildJourneyLP() {
       <div className="red-streak mx-8" />
 
       {/* ═══════════════════════════════════════════════════════════════
-          SECTION 6: VEJLEDNING — Mere end dele. Nu nævner vi Nardocar.
+          SECTION 5: VEJLEDNING — Mere end dele. Nu nævner vi Nardocar.
       ═══════════════════════════════════════════════════════════════ */}
       <section className="py-24 md:py-36 relative">
         <div className="container">
@@ -369,7 +333,7 @@ export default function BuildJourneyLP() {
       <div className="red-streak mx-8" />
 
       {/* ═══════════════════════════════════════════════════════════════
-          SECTION 7: COMMUNITY + CTA
+          SECTION 6: COMMUNITY + CTA
       ═══════════════════════════════════════════════════════════════ */}
       <section className="py-24 md:py-36 relative grain-overlay">
         <div className="container relative z-10">
