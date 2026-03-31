@@ -205,7 +205,61 @@ export default function ConfidenceLP() {
       <div className="red-streak mx-8" />
 
       {/* ═══════════════════════════════════════════════════════════════
-          SECTION 3: GARANTIERNE — Nu nævner vi Nardocar.
+          SECTION 3: SOCIAL PROOF — Lad kunderne overbevise først.
+      ═══════════════════════════════════════════════════════════════ */}
+      <section className="py-24 md:py-36 relative grain-overlay">
+        <div className="container relative z-10">
+          <motion.div
+            variants={fadeIn}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-80px" }}
+            className="text-center mb-16"
+          >
+            <h2 className="font-display text-3xl md:text-5xl font-bold leading-tight tracking-tight">
+              De tøvede også. <span className="text-nc-red">Og så gjorde de det.</span>
+            </h2>
+          </motion.div>
+
+          <motion.div
+            variants={stagger}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-50px" }}
+            className="grid md:grid-cols-3 gap-6"
+          >
+            {testimonials.map((t, i) => (
+              <motion.div
+                key={i}
+                variants={fadeUp}
+                className="bg-card border border-border/50 p-8 rounded-sm"
+              >
+                <div className="flex gap-1 mb-4">
+                  {[...Array(5)].map((_, j) => (
+                    <Star key={j} className="w-4 h-4 text-nc-red fill-nc-red" />
+                  ))}
+                </div>
+                <p className="text-foreground/80 leading-relaxed mb-6 italic">
+                  "{t.quote}"
+                </p>
+                <div className="border-t border-border/30 pt-4">
+                  <p className="font-display text-sm font-semibold text-foreground tracking-wider">
+                    {t.name}
+                  </p>
+                  <p className="text-muted-foreground text-xs">
+                    {t.car}
+                  </p>
+                </div>
+              </motion.div>
+            ))}
+          </motion.div>
+        </div>
+      </section>
+
+      <div className="red-streak mx-8" />
+
+      {/* ═══════════════════════════════════════════════════════════════
+          SECTION 4: GARANTIERNE — Trust badges bekræfter bagefter.
       ═══════════════════════════════════════════════════════════════ */}
       <section className="py-24 md:py-36 relative">
         <div className="container">
@@ -257,60 +311,6 @@ export default function ConfidenceLP() {
                   </h3>
                   <p className="text-muted-foreground text-sm leading-relaxed">
                     {item.description}
-                  </p>
-                </div>
-              </motion.div>
-            ))}
-          </motion.div>
-        </div>
-      </section>
-
-      <div className="red-streak mx-8" />
-
-      {/* ═══════════════════════════════════════════════════════════════
-          SECTION 4: SOCIAL PROOF — Rigtige kunder der tog springet.
-      ═══════════════════════════════════════════════════════════════ */}
-      <section className="py-24 md:py-36 relative grain-overlay">
-        <div className="container relative z-10">
-          <motion.div
-            variants={fadeIn}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-80px" }}
-            className="text-center mb-16"
-          >
-            <h2 className="font-display text-3xl md:text-5xl font-bold leading-tight tracking-tight">
-              De tøvede også. <span className="text-nc-red">Og så gjorde de det.</span>
-            </h2>
-          </motion.div>
-
-          <motion.div
-            variants={stagger}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-50px" }}
-            className="grid md:grid-cols-3 gap-6"
-          >
-            {testimonials.map((t, i) => (
-              <motion.div
-                key={i}
-                variants={fadeUp}
-                className="bg-card border border-border/50 p-8 rounded-sm"
-              >
-                <div className="flex gap-1 mb-4">
-                  {[...Array(5)].map((_, j) => (
-                    <Star key={j} className="w-4 h-4 text-nc-red fill-nc-red" />
-                  ))}
-                </div>
-                <p className="text-foreground/80 leading-relaxed mb-6 italic">
-                  "{t.quote}"
-                </p>
-                <div className="border-t border-border/30 pt-4">
-                  <p className="font-display text-sm font-semibold text-foreground tracking-wider">
-                    {t.name}
-                  </p>
-                  <p className="text-muted-foreground text-xs">
-                    {t.car}
                   </p>
                 </div>
               </motion.div>

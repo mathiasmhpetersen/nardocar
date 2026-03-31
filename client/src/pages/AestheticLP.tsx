@@ -23,7 +23,7 @@
  * COPY TONE: Talesprog. Kan siges højt. Kort-lang sætningsvariation.
  */
 import { motion, useScroll, useTransform } from "framer-motion";
-import { ArrowRight, ChevronDown, Shield, Truck, Star, Headphones } from "lucide-react";
+import { ArrowRight, ChevronDown, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useRef } from "react";
 
@@ -295,9 +295,9 @@ export default function AestheticLP() {
       <div className="red-streak mx-8" />
 
       {/* ═══════════════════════════════════════════════════════════════
-          SECTION 5: THE BRIDGE — NOW we reveal Nardocar.
-          The prospect has identified. The desire is crystallized.
-          Only now does the product enter — as the inevitable answer.
+          SECTION 5: THE BRIDGE — Inspiration, not sales.
+          Unaware prospects aren't ready to buy. They're ready to dream.
+          Email capture: low commitment, high relevance.
       ═══════════════════════════════════════════════════════════════ */}
       <section className="py-24 md:py-36 relative">
         <div className="container relative z-10">
@@ -306,65 +306,39 @@ export default function AestheticLP() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-80px" }}
-            className="max-w-3xl mx-auto text-center"
+            className="max-w-2xl mx-auto text-center"
           >
-            <motion.img
-              src={LOGO_WHITE}
-              alt="Nardocar"
-              className="h-8 md:h-10 mx-auto mb-8"
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, ease: "easeOut" as const }}
-            />
-
             <h2 className="font-display text-3xl md:text-5xl font-bold leading-tight tracking-tight mb-6">
-              Det billede du har i hovedet?<br />
-              <span className="text-nc-red">Vi har delene til det.</span>
+              Vil du se hvad{" "}
+              <span className="text-nc-red">andre har bygget?</span>
             </h2>
-            <p className="text-foreground/65 text-lg leading-relaxed max-w-2xl mx-auto mb-12">
-              Over 150.000 dele. Verificeret til din model, så du slipper for
-              gætværk og fejlkøb. TÜV/EC-papirer der holder til syn.
-              Og et team af bilfolk der forstår præcis hvad du går efter
-              — fordi de selv har stået med det samme blik.
+            <p className="text-muted-foreground text-lg leading-relaxed mb-10">
+              Skriv din bilmodel. Vi sender dig builds der matcher — ingen spam, ingen salg. Bare inspiration.
             </p>
 
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-14">
-              {[
-                { icon: Shield, label: "Fitment-garanti", desc: "Passer til din model" },
-                { icon: Star, label: "4,5 på Trustpilot", desc: "600+ anmeldelser" },
-                { icon: Truck, label: "Hurtig levering", desc: "DK, NO & SE" },
-                { icon: Headphones, label: "Ekspert support", desc: "Rigtige bilfolk" },
-              ].map(({ icon: Icon, label, desc }) => (
-                <div
-                  key={label}
-                  className="border border-border/40 rounded-sm p-4 text-center bg-card/30"
-                >
-                  <Icon className="w-5 h-5 text-nc-red mx-auto mb-2" />
-                  <p className="text-foreground/90 text-sm font-medium font-display">{label}</p>
-                  <p className="text-muted-foreground text-xs mt-0.5">{desc}</p>
-                </div>
-              ))}
-            </div>
-
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <form
+              onSubmit={(e) => e.preventDefault()}
+              className="flex flex-col sm:flex-row gap-3 max-w-xl mx-auto"
+            >
+              <input
+                type="text"
+                placeholder="Hvilken bil har du?"
+                className="flex-1 bg-card border border-border/50 rounded-sm px-4 py-3 text-foreground placeholder:text-muted-foreground/50 font-body focus:outline-none focus:border-nc-red/50 transition-colors"
+              />
+              <input
+                type="email"
+                placeholder="Din email"
+                className="flex-1 bg-card border border-border/50 rounded-sm px-4 py-3 text-foreground placeholder:text-muted-foreground/50 font-body focus:outline-none focus:border-nc-red/50 transition-colors"
+              />
               <Button
+                type="submit"
                 size="lg"
-                className="bg-nc-red text-white hover:bg-nc-red-light font-display uppercase tracking-wider text-sm px-8 py-6 rounded-sm"
-                onClick={() => window.open("https://nardocar.dk/shop", "_blank")}
+                className="bg-nc-red text-white hover:bg-nc-red-light font-display uppercase tracking-wider text-sm px-6 py-3 rounded-sm whitespace-nowrap"
               >
-                Find dele til din bil
+                Send mig builds
                 <ArrowRight className="ml-2 w-4 h-4" />
               </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-border text-foreground hover:border-nc-red hover:text-nc-red font-display uppercase tracking-wider text-sm px-8 py-6 rounded-sm"
-                onClick={() => window.open("https://nardocar.dk/shop", "_blank")}
-              >
-                Kontakt os for rådgivning
-              </Button>
-            </div>
+            </form>
           </motion.div>
         </div>
       </section>
