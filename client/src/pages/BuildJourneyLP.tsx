@@ -1,24 +1,34 @@
 /*
  * DESIGN: Nardocar Brand — Dark base, red (#FF0000) accents, Poppins + Roboto
- * LP2: "The Build Journey" — Problem Unaware / Problem Aware
+ * LP2: "The Build Journey" — Problem Aware
  * Target: First Build Frederik (19-23) & Obsessed Oliver (38, ingeniør)
  *
- * COPY STRUCTURE (PDA — delayed brand reveal):
- *   1. Hero — Processen som belønning. Ingen brand endnu.
- *   2. Historien — Ethvert build starter med en følelse.
- *   3. Trinene — Fire trin. Stadig fokus på DERES rejse.
- *   4. Vejledning — Mere end bare dele. Nu nævner vi Nardocar.
- *   5. Community + CTA — Social proof og handling.
+ * SCHWARTZ PROBLEM AWARE STRATEGY:
+ *   - The prospect knows the desire AND the problem.
+ *   - His car sits too high. The proportions are off. He sees it every day.
+ *   - He doesn't need to be told he wants to modify — he needs the problem NAMED.
+ *   - Strategy: Name the problem directly in the headline. Agitate it.
+ *     Then give permission. Then show the path.
+ *
+ * COPY STRUCTURE:
+ *   1. Hero — Name the problem directly. "Din bil sidder for højt."
+ *   2. Navngiv problemet — Agitate. Show before/after.
+ *   3. Permission slip — "Du behøver ikke retfærdiggøre det med performance."
+ *   4. Historien — Hvert build starter det samme sted. (Moved down.)
+ *   5. Trinene — Fire trin. Fokus på deres rejse.
+ *   6. Vejledning — Ikke bare en shop. En makker i garagen.
+ *   7. Community + CTA — Social proof og handling.
  *
  * COPY TONE: Talesprog. Kan siges højt. Kort-lang sætningsvariation.
  */
 import { motion, useScroll, useTransform } from "framer-motion";
-import { ArrowRight, ChevronDown, Package, Headphones, Wrench, CheckCircle2, BookOpen, Users, Shield, Star, Truck } from "lucide-react";
+import { ArrowRight, ChevronDown, Package, Headphones, Wrench, CheckCircle2, BookOpen, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useRef } from "react";
 
 const LOGO_WHITE = "https://d2xsxph8kpxj0f.cloudfront.net/310519663451266806/Erre6hcnrPtPVTwXw7nEHY/nardocar-white_7eff51c9.png";
 const HERO_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663451266806/Erre6hcnrPtPVTwXw7nEHY/hero-build-journey-XKUJ69yMM7aY658E5JcN7u.webp";
+const BEFORE_AFTER_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663451266806/Erre6hcnrPtPVTwXw7nEHY/before-after-stance-oUubxCSbiMa4cDApkpRvfr.webp";
 const CONFIDENCE_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663451266806/Erre6hcnrPtPVTwXw7nEHY/hero-confidence-AfyfH8Nn7VSkg4koVxUiUm.webp";
 const GALLERY_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663451266806/Erre6hcnrPtPVTwXw7nEHY/social-proof-gallery-ih8XJeC59fzCv7Jk5iSEGZ.webp";
 
@@ -75,7 +85,9 @@ export default function BuildJourneyLP() {
     <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
 
       {/* ═══════════════════════════════════════════════════════════════
-          SECTION 1: HERO — Processen er belønningen. Ingen brand.
+          SECTION 1: HERO — Navngiv problemet direkte.
+          Schwartz Problem Aware: "Your headline starts with the desire/problem."
+          Ikke processen. Ikke filosofi. Problemet.
       ═══════════════════════════════════════════════════════════════ */}
       <section ref={heroRef} className="relative h-screen flex items-end overflow-hidden">
         <motion.div className="absolute inset-0" style={{ y: heroImgY }}>
@@ -96,11 +108,14 @@ export default function BuildJourneyLP() {
             className="max-w-3xl"
           >
             <h1 className="font-display text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold leading-[0.92] tracking-tight mb-6">
-              Det handler ikke<br />
-              om <span className="text-nc-red">slutresultatet.</span>
+              Din bil sidder<br />
+              for højt.
             </h1>
-            <p className="text-foreground/65 text-lg md:text-xl max-w-xl leading-relaxed">
-              Det handler om processen. Researchen. Valgene. Den første del du monterer med dine egne hænder.
+            <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-[0.92] tracking-tight mb-6">
+              <span className="text-nc-red">Og du har vænnet dig til det.</span>
+            </h2>
+            <p className="text-muted-foreground text-lg md:text-xl max-w-xl leading-relaxed">
+              Hjulkasserne er halvtomme. Proportionerne stemmer ikke. Den ser ikke færdig ud. Det er ikke indbildning. Det er geometri.
             </p>
           </motion.div>
         </div>
@@ -117,7 +132,82 @@ export default function BuildJourneyLP() {
       <div className="red-streak" />
 
       {/* ═══════════════════════════════════════════════════════════════
-          SECTION 2: HISTORIEN — Ethvert build starter med en følelse.
+          SECTION 2: NAVNGIV PROBLEMET — Agiter det. Vis forskellen.
+          Schwartz: Intensify the problem before presenting the solution.
+      ═══════════════════════════════════════════════════════════════ */}
+      <section className="py-24 md:py-36 relative grain-overlay">
+        <div className="container relative z-10">
+          <motion.div
+            variants={fadeIn}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-80px" }}
+            className="max-w-3xl mb-16"
+          >
+            <h2 className="font-display text-3xl md:text-5xl font-bold leading-tight tracking-tight mb-8">
+              Det er ikke noget du vænner dig til.
+            </h2>
+            <p className="text-foreground/65 text-lg md:text-xl leading-relaxed">
+              Det er noget der irriterer dig mere jo længere tid der går. Du har set hundredvis af builds på Instagram. Du ved præcis hvad der gør forskellen. Hjulene skal fylde hjulkasserne. Bilen skal sidde tæt på asfalten. Så ser den færdig ud.
+            </p>
+          </motion.div>
+
+          <motion.div
+            variants={fadeIn}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-80px" }}
+            className="relative max-w-4xl"
+          >
+            <div className="relative overflow-hidden rounded-sm">
+              <img
+                src={BEFORE_AFTER_IMG}
+                alt="Stock Golf vs. sænket Golf"
+                className="w-full h-auto"
+              />
+            </div>
+            <div className="absolute top-4 left-4 bg-background/80 backdrop-blur-sm px-3 py-1.5 rounded-sm">
+              <span className="text-xs font-display uppercase tracking-wider text-muted-foreground">Stock</span>
+            </div>
+            <div className="absolute top-4 right-4 bg-nc-red backdrop-blur-sm px-3 py-1.5 rounded-sm">
+              <span className="text-xs font-display uppercase tracking-wider text-white font-semibold">4 cm lavere</span>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      <div className="red-streak mx-8" />
+
+      {/* ═══════════════════════════════════════════════════════════════
+          SECTION 3: PERMISSION SLIP — Giv tilladelse til æstetik.
+          Du behøver ikke performance-undskyldningen.
+      ═══════════════════════════════════════════════════════════════ */}
+      <section className="py-24 md:py-36 relative">
+        <div className="container">
+          <motion.div
+            variants={fadeIn}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-80px" }}
+            className="max-w-3xl"
+          >
+            <h2 className="font-display text-3xl md:text-5xl font-bold leading-tight tracking-tight mb-2">
+              Du behøver ikke retfærdiggøre det
+            </h2>
+            <h2 className="font-display text-3xl md:text-5xl font-bold leading-tight tracking-tight mb-8">
+              <span className="text-nc-red">med performance.</span>
+            </h2>
+            <p className="text-foreground/65 text-lg md:text-xl leading-relaxed">
+              Du kigger ikke på din bil og tænker på G-kræfter. Du kigger på wheel gap. På proportionerne. På den måde lyset rammer lakken når den sidder præcis rigtigt. Det er okay. Det er faktisk det mest ærlige du kan sige om din bil.
+            </p>
+          </motion.div>
+        </div>
+      </section>
+
+      <div className="red-streak mx-8" />
+
+      {/* ═══════════════════════════════════════════════════════════════
+          SECTION 4: HISTORIEN — Hvert build starter med en følelse.
       ═══════════════════════════════════════════════════════════════ */}
       <section className="py-24 md:py-36 relative grain-overlay">
         <div className="container relative z-10">
@@ -146,7 +236,7 @@ export default function BuildJourneyLP() {
                 For nogen er det bare en hobby. For dig er det meditation.
               </p>
               <p className="text-foreground/80 font-medium">
-                Byggeprocessen er lige så vigtig som slutresultatet. Og det ved du godt.
+                Du ved hvad du vil have. Du mangler bare det rigtige sted at starte.
               </p>
             </div>
           </motion.div>
@@ -156,7 +246,7 @@ export default function BuildJourneyLP() {
       <div className="red-streak mx-8" />
 
       {/* ═══════════════════════════════════════════════════════════════
-          SECTION 3: TRINENE — Fire trin. Fokus på deres rejse.
+          SECTION 5: TRINENE — Fire trin. Fokus på deres rejse.
       ═══════════════════════════════════════════════════════════════ */}
       <section className="py-24 md:py-36 relative">
         <div className="container">
@@ -208,7 +298,7 @@ export default function BuildJourneyLP() {
       <div className="red-streak mx-8" />
 
       {/* ═══════════════════════════════════════════════════════════════
-          SECTION 4: VEJLEDNING — Mere end dele. Nu nævner vi Nardocar.
+          SECTION 6: VEJLEDNING — Mere end dele. Nu nævner vi Nardocar.
       ═══════════════════════════════════════════════════════════════ */}
       <section className="py-24 md:py-36 relative">
         <div className="container">
@@ -279,7 +369,7 @@ export default function BuildJourneyLP() {
       <div className="red-streak mx-8" />
 
       {/* ═══════════════════════════════════════════════════════════════
-          SECTION 5: COMMUNITY + CTA
+          SECTION 7: COMMUNITY + CTA
       ═══════════════════════════════════════════════════════════════ */}
       <section className="py-24 md:py-36 relative grain-overlay">
         <div className="container relative z-10">
