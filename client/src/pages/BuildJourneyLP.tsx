@@ -385,7 +385,7 @@ export default function BuildJourneyLP() {
                   size="lg"
                   variant="outline"
                   className="border-border text-foreground hover:border-nc-red hover:text-nc-red font-display uppercase tracking-wider text-sm px-8 py-6 rounded-sm"
-                  onClick={() => window.open("https://nardocar.dk/shop", "_blank")}
+                  onClick={() => window.open("https://www.nardocar.dk/shop/profile.html", "_blank")}
                 >
                   Snak med os først
                 </Button>

@@ -37,6 +37,13 @@ const pages = [
     description: "For the 19-23yo stuck in research paralysis. He knows what he wants but can't decide. One recommendation, objections killed, decision collapsed.",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663451266806/Erre6hcnrPtPVTwXw7nEHY/hero-build-journey-XKUJ69yMM7aY658E5JcN7u.webp",
   },
+  {
+    path: "/golf7best",
+    title: "Golf 7 Top 3 Bestsellere",
+    subtitle: "Product Aware",
+    description: "For the Golf 7 owner ready to upgrade. Three bestselling products with direct links, specs, and pricing — Scorpion exhaust, AP coilovers, and Maxton diffuser.",
+    image: "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?q=80&w=2940&auto=format&fit=crop",
+  },
 ];
 
 const fadeUp = {
@@ -77,7 +84,7 @@ export default function Home() {
               Top-of-Funnel Campaign Pages
             </p>
             <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold leading-[0.95] tracking-tight text-foreground mb-6">
-              4 Landing Pages<br />
+              5 Landing Pages<br />
               <span className="text-nc-red">for New Audiences</span>
             </h1>
             <p className="text-muted-foreground text-lg md:text-xl max-w-2xl leading-relaxed">
