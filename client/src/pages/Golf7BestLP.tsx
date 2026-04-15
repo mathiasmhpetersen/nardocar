@@ -405,7 +405,7 @@ export default function Golf7BestLP() {
                       className="bg-nc-red text-white hover:bg-nc-red-light font-display uppercase tracking-wider text-sm px-8 py-6 rounded-sm"
                       onClick={() => window.open(product.url, "_blank")}
                     >
-                      Køb nu — Gratis fragt
+                      Se pris og detaljer
                       <ArrowRight className="ml-2 w-4 h-4" />
                     </Button>
                     <span className="text-foreground/40 text-xs hidden sm:block">
