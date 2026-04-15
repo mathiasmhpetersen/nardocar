@@ -59,7 +59,7 @@ const fadeUp = {
 const products = [
   {
     category: "UDSTØDNING",
-    name: "Scorpion Cat-Back System — Golf GTI",
+    name: "Scorpion Cat-Back System",
     tagline: "Den lyd du har drømt om",
     description:
       "Naboerne vender sig om. Din Golf GTI får en dyb, aggressiv motorsportslyd der føles i mellemgulvet — uden droneeffekt på motorvejen. Håndlavet i England af T304 rustfrit stål med livstidsgaranti.",
