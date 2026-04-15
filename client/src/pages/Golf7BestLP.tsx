@@ -9,8 +9,7 @@
  *   3. Product 1 — Scorpion Cat-Back System (exhaust)
  *   4. Product 2 — AP Gevindundervogn (coilovers)
  *   5. Product 3 — RaceChip RS (chiptuning)
- *   6. Bundle CTA — "Komplet setup" cross-sell
- *   7. CTA — Final conversion push + trust stats
+ *   6. CTA — Final conversion push + trust stats
  *   8. Sticky mobile CTA bar
  */
 import { motion, useScroll, useTransform, AnimatePresence } from "framer-motion";
@@ -150,10 +149,6 @@ const stats = [
   { value: "5 år", label: "GARANTI*" },
   { value: "50 dage", label: "RETURRET" },
 ];
-
-const BUNDLE_TOTAL = "16.724";
-const BUNDLE_DISCOUNTED = "14.899";
-const BUNDLE_SAVINGS = "1.825";
 
 export default function Golf7BestLP() {
   const heroRef = useRef<HTMLDivElement>(null);
@@ -451,65 +446,6 @@ export default function Golf7BestLP() {
       ))}
 
       <div className="red-streak" />
-
-      {/* ═══════════════════════════════════════════════════════════════
-          SECTION 5: BUNDLE CTA — Cross-sell "Komplet setup"
-      ═══════════════════════════════════════════════════════════════ */}
-      <section className="py-20 md:py-28 relative grain-overlay">
-        <div className="container relative z-10">
-          <motion.div
-            variants={fadeIn}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-80px" }}
-            className="max-w-4xl mx-auto"
-          >
-            <div className="bg-card border border-border/50 rounded-sm p-8 md:p-12">
-              <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-8">
-                <div className="flex-1">
-                  <p className="text-nc-red uppercase tracking-[0.25em] text-xs font-semibold font-display mb-3 flex items-center gap-2">
-                    <Flame className="w-4 h-4" />
-                    Komplet Golf 7 setup
-                  </p>
-                  <h3 className="font-display text-2xl md:text-3xl font-bold leading-tight tracking-tight mb-3">
-                    Tag alle 3 — spar {BUNDLE_SAVINGS},-
-                  </h3>
-                  <p className="text-foreground/60 text-base leading-relaxed mb-4">
-                    Lyd, stance og kraft i én pakke. De fleste af vores kunder starter med én
-                    — og vender tilbage efter de andre. Spring ventetiden over.
-                  </p>
-
-                  {/* Bundle product list */}
-                  <div className="flex flex-col gap-2 mb-6">
-                    {products.map((p) => (
-                      <div key={p.name} className="flex items-center gap-2 text-sm text-foreground/70">
-                        <Check className="w-3.5 h-3.5 text-nc-red shrink-0" />
-                        <span>{p.name}</span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-
-                <div className="flex flex-col items-center md:items-end gap-3 shrink-0">
-                  <div className="text-center md:text-right">
-                    <p className="text-muted-foreground text-sm line-through">{BUNDLE_TOTAL},- DKK</p>
-                    <p className="text-nc-red font-display text-4xl font-bold">{BUNDLE_DISCOUNTED},-</p>
-                    <p className="text-muted-foreground text-xs uppercase tracking-wider">DKK inkl. moms</p>
-                  </div>
-                  <Button
-                    size="lg"
-                    className="bg-nc-red text-white hover:bg-nc-red-light font-display uppercase tracking-wider text-sm px-8 py-6 rounded-sm w-full md:w-auto"
-                    onClick={() => window.open(SHOP_URL, "_blank")}
-                  >
-                    Se komplet pakke
-                    <ArrowRight className="ml-2 w-4 h-4" />
-                  </Button>
-                </div>
-              </div>
-            </div>
-          </motion.div>
-        </div>
-      </section>
 
       <div className="red-streak" />
 
