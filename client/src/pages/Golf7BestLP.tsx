@@ -7,7 +7,7 @@
  *   1. Hero — Full-screen Golf 7 in garage, "Top 3 Bestsellere"
  *   2. Product 1 — Scorpion Cat-Back System (exhaust)
  *   3. Product 2 — AP Gevindundervogn (coilovers)
- *   4. Product 3 — Maxton Rear Diffuser (styling)
+ *   4. Product 3 — RaceChip RS (chiptuning)
  *   5. CTA — "Klar til at opgradere din Golf 7?" + trust stats
  */
 import { motion, useScroll, useTransform } from "framer-motion";
@@ -64,7 +64,7 @@ const products = [
       { label: "MATERIALE", value: "T304 stål" },
       { label: "PRODUKTION", value: "Limité" },
     ],
-    image: "https://www.scorpion-exhausts.com/images/products/SVWS043_3.jpg",
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663451266806/iBJypn5FUvZrT5PKAAfZMN/scorpion-catback_1642af8e.jpeg",
     url: "https://www.nardocar.dk/shop/scorpion-non-resonated-cat-back-system-vw-mk7-golf-gti-including-clubsport-clubsport-s-ascari-1674848p.html",
   },
   {
@@ -88,32 +88,32 @@ const products = [
       { label: "GARANTI", value: "3 år" },
       { label: "DÆMPERTYPE", value: "Twin-tube" },
     ],
-    image: "https://cdn.nardocar.dk/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/a/p/ap-coilover-golf7.jpg",
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663451266806/iBJypn5FUvZrT5PKAAfZMN/ap-gevindundervogn_e741289d.jpeg",
     url: "https://www.nardocar.dk/shop/ap-gevindundervogn-vw-golf-7-au-420p.html",
   },
   {
-    category: "STYLING",
-    name: "Maxton Rear Diffuser — Golf 7 GTI",
+    category: "CHIPTUNING",
+    name: "RaceChip RS — Golf 7 GTI / R",
     description:
-      "Giv din Golf 7 GTI et aggressivt, raceinspireret look. Maxton Designs rear diffuser er præcisionsformet til perfekt pasform og giver bagpartiet den kant det mangler — uden permanent modifikation.",
-    price: "1.349",
+      "Frigør op til 30% ekstra hestekræfter med RaceChip RS. Plug & play chiptuning der optimerer motorens parametre via OBD-porten — helt uden indgreb i motoren. Tysk ingeniørkunst med app-styring og 5 års motorgaranti.",
+    price: "3.499",
     oldPrice: null,
     currency: "DKK",
     badge: null,
     features: [
-      { icon: Check, text: "Præcis OEM-lignende pasform" },
-      { icon: Check, text: "ABS plastik, sort finish" },
-      { icon: Check, text: "Nem montering uden boring" },
-      { icon: Check, text: "Designet i EU" },
+      { icon: Check, text: "Op til +65 HK og +95 Nm" },
+      { icon: Check, text: "Plug & play via OBD-port" },
+      { icon: ShieldCheck, text: "5 års motorgaranti" },
+      { icon: Check, text: "App-styring (Bluetooth)" },
     ],
     specs: [
-      { label: "MATERIALE", value: "ABS plastik" },
-      { label: "FINISH", value: "Sort tekstur" },
-      { label: "MONTERING", value: "Bolt-on" },
-      { label: "GARANTI", value: "2 år" },
+      { label: "EFFEKT", value: "+30% HK" },
+      { label: "MONTERING", value: "Plug & play" },
+      { label: "GARANTI", value: "5 år" },
+      { label: "STYRING", value: "App" },
     ],
-    image: "https://maxtondesign.com/data/gfx/pictures/large/1/0/10_1.jpg",
-    url: "https://www.nardocar.dk/shop/maxton-rear-diffuser-vw-golf-mk7-gti-facelift-1032507p.html",
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663451266806/iBJypn5FUvZrT5PKAAfZMN/racechip-rs-product_a5cce0f8.png",
+    url: "https://www.nardocar.dk/shop/racechip-rs-vw-golf-7-gti-2-0-tsi-220-hk-2012-2019-1674850p.html",
   },
 ];
 
