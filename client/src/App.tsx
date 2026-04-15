@@ -10,6 +10,10 @@ import BuildJourneyLP from "./pages/BuildJourneyLP";
 import ConfidenceLP from "./pages/ConfidenceLP";
 import FirstBuildLP from "./pages/FirstBuildLP";
 import Golf7BestLP from "./pages/Golf7BestLP";
+import PoloBestLP from "./pages/PoloBestLP";
+import BMWE90BestLP from "./pages/BMWE90BestLP";
+import BMWE91BestLP from "./pages/BMWE91BestLP";
+import AudiA3BestLP from "./pages/AudiA3BestLP";
 
 function Router() {
   return (
@@ -20,6 +24,10 @@ function Router() {
       <Route path="/confidence" component={ConfidenceLP} />
       <Route path="/first-build" component={FirstBuildLP} />
       <Route path="/golf7best" component={Golf7BestLP} />
+      <Route path="/polobest" component={PoloBestLP} />
+      <Route path="/bmwe90best" component={BMWE90BestLP} />
+      <Route path="/bmwe91best" component={BMWE91BestLP} />
+      <Route path="/audia3best" component={AudiA3BestLP} />
       <Route path="/404" component={NotFound} />
       <Route component={NotFound} />
     </Switch>
