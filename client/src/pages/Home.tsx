@@ -41,8 +41,36 @@ const pages = [
     path: "/golf7best",
     title: "Golf 7 Top 3 Bestsellere",
     subtitle: "Product Aware",
-    description: "For the Golf 7 owner ready to upgrade. Three bestselling products with direct links, specs, and pricing — Scorpion exhaust, AP coilovers, and Maxton diffuser.",
+    description: "For the Golf 7 owner ready to upgrade. Three bestselling products with direct links, specs, and pricing — Scorpion exhaust, AP coilovers, and RaceChip chiptuning.",
     image: "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?q=80&w=2940&auto=format&fit=crop",
+  },
+  {
+    path: "/polobest",
+    title: "VW Polo Top 3 Bestsellere",
+    subtitle: "Product Aware",
+    description: "For Polo-ejeren klar til at opgradere. Scorpion Cat-Back, ST X gevindundervogn og RaceChip RS — de tre mest populære upgrades.",
+    image: "https://images.unsplash.com/photo-1619405399517-d7fce0f13302?q=80&w=2940&auto=format&fit=crop",
+  },
+  {
+    path: "/bmwe90best",
+    title: "BMW E90 Top 3 Bestsellere",
+    subtitle: "Product Aware",
+    description: "For BMW E90-ejeren klar til at opgradere. TA-Technix sports bagpotte, AP gevindundervogn og RaceChip GTS 5 — de tre mest populære upgrades.",
+    image: "https://images.unsplash.com/photo-1555215695-3004980ad54e?q=80&w=2940&auto=format&fit=crop",
+  },
+  {
+    path: "/bmwe91best",
+    title: "BMW E91 Touring Top 3 Bestsellere",
+    subtitle: "Product Aware",
+    description: "For BMW E91 Touring-ejeren klar til at opgradere. TA Technix udstødning, TA-Technix gevindundervogn og RaceChip GTS 5 — de tre mest populære upgrades.",
+    image: "https://images.unsplash.com/photo-1580274455191-1c62238fa333?q=80&w=2940&auto=format&fit=crop",
+  },
+  {
+    path: "/audia3best",
+    title: "Audi A3 Top 3 Bestsellere",
+    subtitle: "Product Aware",
+    description: "For Audi A3-ejeren klar til at opgradere. Milltek Cat-Back, AP gevindundervogn og RaceChip RS — de tre mest populære upgrades.",
+    image: "https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?q=80&w=2940&auto=format&fit=crop",
   },
 ];
 
@@ -84,7 +112,7 @@ export default function Home() {
               Top-of-Funnel Campaign Pages
             </p>
             <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold leading-[0.95] tracking-tight text-foreground mb-6">
-              5 Landing Pages<br />
+              9 Landing Pages<br />
               <span className="text-nc-red">for New Audiences</span>
             </h1>
             <p className="text-muted-foreground text-lg md:text-xl max-w-2xl leading-relaxed">
