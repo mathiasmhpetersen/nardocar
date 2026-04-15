@@ -14,6 +14,7 @@ import PoloBestLP from "./pages/PoloBestLP";
 import BMWE90BestLP from "./pages/BMWE90BestLP";
 import BMWE91BestLP from "./pages/BMWE91BestLP";
 import AudiA3BestLP from "./pages/AudiA3BestLP";
+import GolfStoryLP from "./pages/GolfStoryLP";
 
 function Router() {
   return (
@@ -28,6 +29,7 @@ function Router() {
       <Route path="/bmwe90best" component={BMWE90BestLP} />
       <Route path="/bmwe91best" component={BMWE91BestLP} />
       <Route path="/audia3best" component={AudiA3BestLP} />
+      <Route path="/golf-story" component={GolfStoryLP} />
       <Route path="/404" component={NotFound} />
       <Route component={NotFound} />
     </Switch>
