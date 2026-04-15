@@ -63,13 +63,13 @@ const products = [
     tagline: "Den lyd du har drømt om",
     description:
       "Naboerne vender sig om. Din Golf GTI får en dyb, aggressiv motorsportslyd der føles i mellemgulvet — uden droneeffekt på motorvejen. Håndlavet i England af T304 rustfrit stål med livstidsgaranti.",
-    price: "7.936",
-    oldPrice: "9.920",
+    price: "9.920",
+    oldPrice: null,
     currency: "DKK",
-    badge: "Spar 1.984,-",
+    badge: null,
     socialProof: "327+ solgt",
     socialProofIcon: Flame,
-    urgency: "Kun 4 tilbage på lager",
+    urgency: null,
     features: [
       { icon: Check, text: "100mm Ascari udstødningsspidser" },
       { icon: Check, text: "Livstidsgaranti" },
