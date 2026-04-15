@@ -10,6 +10,13 @@ const LOGO_WHITE = "https://d2xsxph8kpxj0f.cloudfront.net/310519663451266806/Err
 
 const pages = [
   {
+    path: "/golf-story",
+    title: "Golf GTI — Kundens Historie",
+    subtitle: "Alle Awareness Stages",
+    description: "Førstepersons storytelling fra en kundes perspektiv. Tager læseren fra 'min bil er fin' til 'jeg skal gøre noget.' Sælger ikke Nardocar — linker blødt.",
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663451266806/TpSm9K3DjQUQomASPiH9zw/white-golf-gti-headlight_f066fbc7.jpg",
+  },
+  {
     path: "/aesthetic",
     title: "The Aesthetic Permission Slip",
     subtitle: "Problem Unaware",
@@ -43,6 +50,34 @@ const pages = [
     subtitle: "Product Aware",
     description: "For the Golf 7 owner ready to upgrade. Three bestselling products with direct links, specs, and pricing — Scorpion exhaust, AP coilovers, and Maxton diffuser.",
     image: "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?q=80&w=2940&auto=format&fit=crop",
+  },
+  {
+    path: "/polobest",
+    title: "VW Polo Bestsellere",
+    subtitle: "Product Aware",
+    description: "Top products for the VW Polo. Exhaust, coilovers, and styling — curated with specs, pricing, and direct shop links.",
+    image: "/images/polo-hero.jpg",
+  },
+  {
+    path: "/bmwe90best",
+    title: "BMW E90 Bestsellere",
+    subtitle: "Product Aware",
+    description: "Curated product picks for BMW E90 owners. Performance exhaust, suspension, and styling upgrades with full specs.",
+    image: "/images/bmw-e90-hero.jpg",
+  },
+  {
+    path: "/bmwe91best",
+    title: "BMW E91 Bestsellere",
+    subtitle: "Product Aware",
+    description: "Top upgrades for the BMW E91 Touring. Exhaust, coilovers, and aesthetic mods — selected for the wagon platform.",
+    image: "/images/bmw-e91-hero.jpg",
+  },
+  {
+    path: "/audia3best",
+    title: "Audi A3 Bestsellere",
+    subtitle: "Product Aware",
+    description: "Best-selling upgrades for the Audi A3. Performance and styling products with fitment details and pricing.",
+    image: "/images/audi-a3-hero.jpg",
   },
 ];
 
@@ -84,7 +119,7 @@ export default function Home() {
               Top-of-Funnel Campaign Pages
             </p>
             <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold leading-[0.95] tracking-tight text-foreground mb-6">
-              5 Landing Pages<br />
+              10 Landing Pages<br />
               <span className="text-nc-red">for New Audiences</span>
             </h1>
             <p className="text-muted-foreground text-lg md:text-xl max-w-2xl leading-relaxed">
