@@ -220,8 +220,7 @@ export default function Golf7BestLP() {
               VW Golf 7 (2012–2019)
             </p>
             <h1 className="font-display text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-6 flex flex-col">
-              <span className="leading-[1.0]">De 3</span>
-              <span className="leading-[1.0]">opgraderinger</span>
+              <span className="leading-[1.0]">De 3 opgraderinger</span>
               <span className="text-nc-red leading-[1.05]">alle vælger</span>
             </h1>
             <p className="text-foreground/65 text-lg md:text-xl max-w-xl leading-relaxed mb-6">
