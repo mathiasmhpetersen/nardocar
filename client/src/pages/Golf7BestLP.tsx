@@ -219,7 +219,7 @@ export default function Golf7BestLP() {
               <span className="w-8 h-px bg-nc-red" />
               VW Golf 7 (2012–2019)
             </p>
-            <h1 className="font-display text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold leading-[0.92] tracking-tight mb-6">
+            <h1 className="font-display text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold leading-[1.1] tracking-tight mb-6">
               De 3 opgraderinger
               <br />
               <span className="text-nc-red">alle vælger</span>
@@ -246,32 +246,6 @@ export default function Golf7BestLP() {
           </motion.div>
         </div>
       </section>
-
-      {/* ═══════════════════════════════════════════════════════════════
-          TRUST BAR — Front-loaded trust signals
-      ═══════════════════════════════════════════════════════════════ */}
-      <div className="border-y border-border/30 bg-card/50">
-        <div className="container py-4">
-          <div className="flex items-center justify-center gap-6 md:gap-12 flex-wrap text-sm text-foreground/60">
-            <div className="flex items-center gap-2">
-              <Truck className="w-4 h-4 text-nc-red" />
-              <span>Gratis fragt over 999,-</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <RotateCcw className="w-4 h-4 text-nc-red" />
-              <span>50 dages returret</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <ShieldCheck className="w-4 h-4 text-nc-red" />
-              <span>Op til 5 års garanti</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Clock className="w-4 h-4 text-nc-red" />
-              <span>Levering 1-3 hverdage</span>
-            </div>
-          </div>
-        </div>
-      </div>
 
       {/* ═══════════════════════════════════════════════════════════════
           SECTIONS 2-4: PRODUCT SHOWCASES (CRO-optimized)
