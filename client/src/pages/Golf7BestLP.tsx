@@ -194,10 +194,9 @@ export default function Golf7BestLP() {
       >
         <motion.div className="absolute inset-0" style={{ y: heroImgY }}>
           <div
-            className="w-full h-[120%] bg-cover"
+            className="w-full h-[120%] bg-cover bg-[center_top] md:bg-[center_120%]"
             style={{
               backgroundImage: "url('/images/golf7-hero.jpg')",
-              backgroundPosition: "center 120%",
             }}
           />
         </motion.div>
