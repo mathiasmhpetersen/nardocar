@@ -197,12 +197,12 @@ export default function Golf7BestLP() {
             className="w-full h-[120%] bg-cover"
             style={{
               backgroundImage: "url('/images/golf7-hero.jpg')",
-              backgroundPosition: "70% 60%",
+              backgroundPosition: "center 55%",
             }}
           />
         </motion.div>
         <div className="absolute inset-0 bg-gradient-to-t from-background via-background/70 to-background/30" />
-        <div className="absolute inset-0 bg-gradient-to-r from-background/80 via-background/40 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background/70 via-background/30 to-transparent" />
 
         <div className="relative z-10 container pb-20 md:pb-28">
           <motion.div
