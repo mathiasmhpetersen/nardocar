@@ -116,7 +116,7 @@ const products = [
   },
   {
     category: "CHIPTUNING",
-    name: "RaceChip RS — Golf 7 GTI / R",
+    name: "RaceChip RS",
     tagline: "+65 HK på 15 minutter",
     description:
       "Tryk på speeder og mærk forskellen med det samme. RaceChip RS frigør op til 30% ekstra hestekræfter via OBD-porten — ingen mekaniker nødvendig. Tysk ingeniørkunst med app-styring og 5 års motorgaranti.",
@@ -140,13 +140,13 @@ const products = [
       { label: "STYRING", value: "App" },
     ],
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663451266806/iBJypn5FUvZrT5PKAAfZMN/racechip-rs-product_a5cce0f8.png",
-    url: "https://www.nardocar.dk/shop/racechip-rs-vw-golf-7-gti-2-0-tsi-220-hk-2012-2019-1674850p.html",
+    url: "https://www.nardocar.dk/shop/vw-golf-7-racechip-16605s1.html",
   },
 ];
 
 const stats = [
   { value: "4,5/5", label: "TRUSTPILOT" },
-  { value: "150.000+", label: "PRODUKTER" },
+  { value: "100%", label: "PRISGARANTI" },
   { value: "5 år", label: "GARANTI*" },
   { value: "50 dage", label: "RETURRET" },
 ];
@@ -202,7 +202,7 @@ export default function Golf7BestLP() {
             className="w-full h-[120%] bg-cover bg-center"
             style={{
               backgroundImage:
-                "url('https://images.unsplash.com/photo-1617814076367-b759c7d7e738?q=80&w=2940&auto=format&fit=crop')",
+                "url('https://images.unsplash.com/photo-1616422285623-13ff0162193c?q=80&w=2940&auto=format&fit=crop')",
             }}
           />
         </motion.div>
