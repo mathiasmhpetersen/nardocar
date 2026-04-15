@@ -197,7 +197,7 @@ export default function Golf7BestLP() {
             className="w-full h-[120%] bg-cover bg-center"
             style={{
               backgroundImage:
-                "url('/images/golf7-hero.jpg')",
+                "url('https://images.unsplash.com/photo-1616422285623-13ff0162193c?q=80&w=2940&auto=format&fit=crop')",
             }}
           />
         </motion.div>
@@ -447,42 +447,13 @@ export default function Golf7BestLP() {
 
       <div className="red-streak" />
 
-      {/* ═══════════════════════════════════════════════════════════════
-          LIFESTYLE BREAK — Garage install photo
-      ═══════════════════════════════════════════════════════════════ */}
-      <section className="relative h-[50vh] md:h-[60vh] overflow-hidden">
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/images/golf7-garage.jpg')" }}
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-background/20" />
-        <div className="relative z-10 h-full flex items-end">
-          <div className="container pb-12 md:pb-16">
-            <motion.p
-              variants={fadeIn}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, margin: "-80px" }}
-              className="text-foreground/80 text-lg md:text-xl font-display max-w-md"
-            >
-              "Montering i egen garage på under 2 timer. Ingen mekaniker nødvendig."
-            </motion.p>
-          </div>
-        </div>
-      </section>
-
       <div className="red-streak" />
 
       {/* ═══════════════════════════════════════════════════════════════
           SECTION 6: CTA — Final conversion push
       ═══════════════════════════════════════════════════════════════ */}
-      <section className="py-24 md:py-36 relative overflow-hidden">
-        <div
-          className="absolute inset-0 bg-cover bg-center opacity-15"
-          style={{ backgroundImage: "url('/images/golf7-street.jpg')" }}
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-background via-background/95 to-background" />
-        <div className="container relative z-10">
+      <section className="py-24 md:py-36 relative">
+        <div className="container">
           <motion.div
             variants={fadeIn}
             initial="hidden"
