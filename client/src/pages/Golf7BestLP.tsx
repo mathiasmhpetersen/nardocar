@@ -197,7 +197,7 @@ export default function Golf7BestLP() {
             className="w-full h-[120%] bg-cover"
             style={{
               backgroundImage: "url('/images/golf7-hero.jpg')",
-              backgroundPosition: "center 30%",
+              backgroundPosition: "70% 60%",
             }}
           />
         </motion.div>
