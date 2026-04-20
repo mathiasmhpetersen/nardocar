@@ -30,10 +30,7 @@ import {
   Shield,
   FileCheck,
   Wrench,
-  MessageCircle,
   Star,
-  CheckCircle2,
-  X,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useRef } from "react";
@@ -441,91 +438,26 @@ export default function FirstBuildLP() {
             className="max-w-3xl mx-auto text-center"
           >
             <h2 className="font-display text-3xl md:text-5xl font-bold leading-tight tracking-tight mb-6">
-              Du behøver ikke beslutte{" "}
-              <span className="text-nc-red">hele buildet.</span>
+              Find delene til{" "}
+              <span className="text-nc-red">dit næste build</span>
             </h2>
-            <p className="text-foreground/65 text-lg leading-relaxed max-w-2xl mx-auto mb-4">
-              Bare det første skridt. Start med undervognen. Alt andet kan
-              vente.
-            </p>
-            <p className="text-foreground/65 text-lg leading-relaxed max-w-2xl mx-auto mb-12">
-              Fortæl os hvad du kører. Vi fortæller dig hvad vi ville sætte
-              på den.
+            <p className="text-foreground/65 text-lg leading-relaxed max-w-2xl mx-auto mb-10">
+              Udstødning, undervogn, chiptuning og mere — alt samlet ét sted.
             </p>
 
-            {/* What you get — not a feature list, a confidence list */}
-            <motion.div
-              variants={stagger}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, margin: "-50px" }}
-              className="grid sm:grid-cols-2 gap-4 max-w-2xl mx-auto mb-14 text-left"
+            <a
+              href="https://www.nardocar.dk/"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              {[
-                "Anbefaling til din præcise model",
-                "TÜV/EC-papirer inkluderet",
-                "Fitment-garanti — har vi anbefalet det, passer det",
-                "Support fra folk der selv kører modificeret",
-              ].map((item) => (
-                <motion.div
-                  key={item}
-                  variants={fadeUp}
-                  className="flex items-start gap-3"
-                >
-                  <CheckCircle2 className="w-5 h-5 text-nc-red shrink-0 mt-0.5" />
-                  <span className="text-foreground/80 text-sm leading-relaxed">
-                    {item}
-                  </span>
-                </motion.div>
-              ))}
-            </motion.div>
-
-            {/* What we DON'T do — builds trust by being honest */}
-            <div className="border border-border/30 rounded-sm p-6 max-w-2xl mx-auto mb-14 text-left bg-card/30">
-              <p className="text-muted-foreground text-xs uppercase tracking-wider font-display mb-4">
-                Hvad vi ikke gør
-              </p>
-              <div className="grid sm:grid-cols-2 gap-3">
-                {[
-                  "Presser dig til at købe mere end du har brug for",
-                  "Sælger dig det dyreste hvis du ikke har brug for det",
-                  "Lader dig sidde alene med monteringen",
-                  "Sælger dele uden dokumentation til syn",
-                ].map((item) => (
-                  <div key={item} className="flex items-start gap-3">
-                    <X className="w-4 h-4 text-muted-foreground shrink-0 mt-0.5" />
-                    <span className="text-muted-foreground text-sm leading-relaxed">
-                      {item}
-                    </span>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* CTA — One primary action. Low commitment. */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
                 size="lg"
                 className="bg-nc-red text-white hover:bg-nc-red-light font-display uppercase tracking-wider text-sm px-8 py-6 rounded-sm"
-                onClick={() =>
-                  window.open("https://nardocar.dk/shop", "_blank")
-                }
               >
-                Få en anbefaling til din bil
+                Udforsk shoppen
                 <ArrowRight className="ml-2 w-4 h-4" />
               </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-border text-foreground hover:border-nc-red hover:text-nc-red font-display uppercase tracking-wider text-sm px-8 py-6 rounded-sm"
-                onClick={() =>
-                  window.open("https://nardocar.dk/shop", "_blank")
-                }
-              >
-                <MessageCircle className="mr-2 w-4 h-4" />
-                Skriv til os på chat
-              </Button>
-            </div>
+            </a>
           </motion.div>
         </div>
       </section>
