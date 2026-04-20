@@ -61,10 +61,8 @@ const products = [
     tagline: "Daytona-lyden til din Polo",
     description:
       "Giv din Polo GTI den aggressive motorsportslyd den fortjener. Scorpion Cat-Back systemet med twin 90mm Daytona-spidser leverer en rå, dyb lyd uden droneeffekt. Håndlavet i England af T304/316 rustfrit stål med livstidsgaranti.",
-    price: "5.122",
-    oldPrice: "6.403",
+    price: "6.403",
     currency: "DKK",
-    badge: "SPAR 20%",
     socialProof: "Bestseller",
     socialProofIcon: Flame,
     urgency: null,
