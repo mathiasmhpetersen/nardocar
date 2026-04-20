@@ -309,36 +309,26 @@ export default function AestheticLP() {
             className="max-w-2xl mx-auto text-center"
           >
             <h2 className="font-display text-3xl md:text-5xl font-bold leading-tight tracking-tight mb-6">
-              Vil du se hvad{" "}
-              <span className="text-nc-red">andre har bygget?</span>
+              Find delene til{" "}
+              <span className="text-nc-red">dit næste build</span>
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-10">
-              Skriv din bilmodel. Vi sender dig builds der matcher — ingen spam, ingen salg. Bare inspiration.
+              Udstødning, undervogn, chiptuning og mere — alt samlet ét sted.
             </p>
 
-            <form
-              onSubmit={(e) => e.preventDefault()}
-              className="flex flex-col sm:flex-row gap-3 max-w-xl mx-auto"
+            <a
+              href="https://www.nardocar.dk/"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              <input
-                type="text"
-                placeholder="Hvilken bil har du?"
-                className="flex-1 bg-card border border-border/50 rounded-sm px-4 py-3 text-foreground placeholder:text-muted-foreground/50 font-body focus:outline-none focus:border-nc-red/50 transition-colors"
-              />
-              <input
-                type="email"
-                placeholder="Din email"
-                className="flex-1 bg-card border border-border/50 rounded-sm px-4 py-3 text-foreground placeholder:text-muted-foreground/50 font-body focus:outline-none focus:border-nc-red/50 transition-colors"
-              />
               <Button
-                type="submit"
                 size="lg"
-                className="bg-nc-red text-white hover:bg-nc-red-light font-display uppercase tracking-wider text-sm px-6 py-3 rounded-sm whitespace-nowrap"
+                className="bg-nc-red text-white hover:bg-nc-red-light font-display uppercase tracking-wider text-sm px-8 py-3 rounded-sm"
               >
-                Send mig builds
+                Udforsk shoppen
                 <ArrowRight className="ml-2 w-4 h-4" />
               </Button>
-            </form>
+            </a>
           </motion.div>
         </div>
       </section>
