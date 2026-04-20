@@ -116,7 +116,7 @@ const products = [
     name: "RaceChip GTS 5 BMW 325d (E90-93)",
     tagline: "+33 HK og +105 Nm ekstra",
     description:
-      "Frigør det fulde potentiale i din 325d. RaceChip GTS 5 leverer op til 30% ekstra hestekræfter med TÜV-certificering og 2 års motorgaranti. Plug & play med app-styring og 7 finjusteringer.",
+      "Frigør det fulde potentiale i din 325d. RaceChip GTS 5 leverer op til 30% ekstra hestekræfter med TÜV-certificering og 3 års motorgaranti. Plug & play med app-styring og 7 finjusteringer.",
     price: "2.778",
     oldPrice: "3.704",
     currency: "DKK",
@@ -127,7 +127,7 @@ const products = [
     features: [
       { icon: Check, text: "Op til +33 HK og +105 Nm" },
       { icon: Check, text: "Plug & play via OBD-port" },
-      { icon: ShieldCheck, text: "2 års motorgaranti" },
+      { icon: ShieldCheck, text: "3 års motorgaranti" },
       { icon: Check, text: "App-styring (Bluetooth 5.2)" },
     ],
     specs: [
