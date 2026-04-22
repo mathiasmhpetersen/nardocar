@@ -12,7 +12,6 @@ const SEAT_IMG = "/images/jason-seat.jpg";               /* A7404835 — GTI pla
 const FRONT_DETAIL_IMG = "/images/jason-front-detail.jpg"; /* A7404823 — front crop red stripe */
 const SIDE_SUNSET_IMG = "/images/jason-side-sunset.jpg"; /* A7404826 — sunset side profile */
 const REAR_IMG = "/images/jason-rear-water.jpg";         /* A7404829 — rear 3/4 at water */
-const FRONT_CLOSE_IMG = "/images/jason-front-water.jpg"; /* A7404833 — front close, VW logo */
 const LOGO_WHITE =
   "https://d2xsxph8kpxj0f.cloudfront.net/310519663451266806/Erre6hcnrPtPVTwXw7nEHY/nardocar-white_7eff51c9.png";
 
@@ -278,16 +277,6 @@ export default function JasonStoryLP() {
           sammen.
         </p>
       </section>
-
-      {/* Full-bleed: front-close (no bottom margin) */}
-      <figure className="js-fullbleed js-fullbleed--last" data-reveal>
-        <img
-          src={FRONT_CLOSE_IMG}
-          loading="lazy"
-          alt="Close-up af Golf 7 GTI — VW-logo, rød stribe, forlygte"
-          className="js-img"
-        />
-      </figure>
 
       {/* CTA */}
       <section className="js-cta" data-reveal>
