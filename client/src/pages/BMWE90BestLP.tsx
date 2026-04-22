@@ -144,7 +144,7 @@ const products = [
 const stats = [
   { value: "4,5/5", label: "TRUSTPILOT" },
   { value: "100%", label: "PRISGARANTI" },
-  { value: "2 år", label: "GARANTI*" },
+  { value: "3 år", label: "GARANTI*" },
   { value: "50 dage", label: "RETURRET" },
 ];
 
