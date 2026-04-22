@@ -15,6 +15,7 @@
 import { motion, useScroll, useTransform, AnimatePresence } from "framer-motion";
 import {
   ArrowRight,
+  ChevronDown,
   ExternalLink,
   Check,
   ShieldCheck,
@@ -30,7 +31,7 @@ import { useRef, useState, useEffect } from "react";
 const LOGO_WHITE =
   "https://d2xsxph8kpxj0f.cloudfront.net/310519663451266806/Erre6hcnrPtPVTwXw7nEHY/nardocar-white_7eff51c9.png";
 
-const SHOP_URL = "https://www.nardocar.dk/shop/audi-a3-biludstyr-204s1.html";
+const SHOP_URL = "https://www.nardocar.dk/shop/audi-a3-8v-2013-2020-biludstyr-213s1.html";
 
 const fadeIn = {
   hidden: { opacity: 0, y: 40 },
@@ -81,7 +82,12 @@ const products = [
       { label: "MONTERING", value: "1-1,5 timer" },
     ],
     image: "https://www.nardocar.dk/images/produkter/milltek/SSXVW045_1.webp",
-    url: "https://www.nardocar.dk/shop/milltek-cat-back-audi-a3-ssxvw045-31116p.html",
+    url: "https://www.nardocar.dk/shop/milltek-catback-audi-a3-8v-2013-2020-63502c1.html",
+    generations: [
+      { label: "Audi A3 8L (1996 - 2003)", url: "https://www.nardocar.dk/shop/milltek-catback-audi-a3-8l-2003-2012-69100c1.html" },
+      { label: "Audi A3 8P (2003 - 2012)", url: "https://www.nardocar.dk/shop/milltek-catback-audi-a3-8p-2003-2012-68588c1.html" },
+      { label: "Audi A3 8V (2013 - 2020)", url: "https://www.nardocar.dk/shop/milltek-catback-audi-a3-8v-2013-2020-63502c1.html" },
+    ],
   },
   {
     category: "UNDERVOGN",
@@ -109,7 +115,8 @@ const products = [
       { label: "DÆMPERTYPE", value: "Twin-tube" },
     ],
     image: "https://www.nardocar.dk/images/produkter/ap/AP-Coilovers.webp",
-    url: "https://www.nardocar.dk/shop/ap-gevindundervogn-audi-a3-8v-440p.html",
+    url: "https://www.nardocar.dk/shop/audi-a3-8v-ap-gevindundervogn-11864c1.html",
+    generations: null,
   },
   {
     category: "CHIPTUNING",
@@ -137,7 +144,13 @@ const products = [
       { label: "INDSTILLINGER", value: "6 trin" },
     ],
     image: "https://www.nardocar.dk/images/produkter/racechip/rs/product-rs.png",
-    url: "https://www.nardocar.dk/shop/racechip-rs-audi-a3-8v-1-5-tfsi-661489p.html",
+    url: "https://www.nardocar.dk/shop/audi-a3-8v-racechip-4401s1.html",
+    generations: [
+      { label: "Audi A3 8L (1996 - 2003)", url: "https://www.nardocar.dk/shop/audi-a3-8l-racechip-4399s1.html" },
+      { label: "Audi A3 8P (2003 - 2012)", url: "https://www.nardocar.dk/shop/audi-a3-8p-racechip-4400s1.html" },
+      { label: "Audi A3 8V (2013 - 2020)", url: "https://www.nardocar.dk/shop/audi-a3-8v-racechip-4401s1.html" },
+      { label: "Audi A3 8Y (2020 - frem)", url: "https://www.nardocar.dk/shop/racechip-rs-audi-a3-8y-68698c1.html" },
+    ],
   },
 ];
 
@@ -157,6 +170,15 @@ export default function AudiA3BestLP() {
   const heroImgY = useTransform(scrollYProgress, [0, 1], ["0%", "20%"]);
 
   const [showStickyBar, setShowStickyBar] = useState(false);
+  const [selectedGenerations, setSelectedGenerations] = useState<Record<string, string>>(() => {
+    const init: Record<string, string> = {};
+    for (const p of products) {
+      if (p.generations) {
+        init[p.name] = p.url;
+      }
+    }
+    return init;
+  });
 
   useEffect(() => {
     const handleScroll = () => {
@@ -374,19 +396,64 @@ export default function AudiA3BestLP() {
                     ))}
                   </div>
 
-                  <div className="flex items-center gap-4">
-                    <Button
-                      size="lg"
-                      className="bg-nc-red text-white hover:bg-nc-red-light font-display uppercase tracking-wider text-sm px-8 py-6 rounded-sm"
-                      onClick={() => window.open(product.url, "_blank")}
-                    >
-                      Se produktet
-                      <ArrowRight className="ml-2 w-4 h-4" />
-                    </Button>
-                    <span className="text-foreground/40 text-xs hidden sm:block">
-                      Op til 60 dages returret
-                    </span>
-                  </div>
+                  {product.generations ? (
+                    <div>
+                      <p className="text-muted-foreground text-[10px] uppercase tracking-wider font-display mb-2">
+                        Vælg din A3-generation
+                      </p>
+                      <div className="flex flex-col sm:flex-row gap-3 items-stretch mb-3">
+                        <div className="relative flex-1 min-w-0">
+                          <select
+                            value={selectedGenerations[product.name] ?? product.url}
+                            onChange={(e) =>
+                              setSelectedGenerations((prev) => ({
+                                ...prev,
+                                [product.name]: e.target.value,
+                              }))
+                            }
+                            className="w-full appearance-none bg-card border border-border/50 text-foreground px-4 py-3 pr-10 rounded-sm font-display text-sm focus:outline-none focus:border-nc-red cursor-pointer"
+                          >
+                            {product.generations.map((gen) => (
+                              <option key={gen.url} value={gen.url}>
+                                {gen.label}
+                              </option>
+                            ))}
+                          </select>
+                          <ChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4 text-foreground/60 pointer-events-none" />
+                        </div>
+                        <Button
+                          size="lg"
+                          className="bg-nc-red text-white hover:bg-nc-red-light font-display uppercase tracking-wider text-sm px-8 py-6 rounded-sm"
+                          onClick={() =>
+                            window.open(
+                              selectedGenerations[product.name] ?? product.url,
+                              "_blank",
+                            )
+                          }
+                        >
+                          Se produktet
+                          <ArrowRight className="ml-2 w-4 h-4" />
+                        </Button>
+                      </div>
+                      <span className="text-foreground/40 text-xs">
+                        Op til 60 dages returret
+                      </span>
+                    </div>
+                  ) : (
+                    <div className="flex items-center gap-4">
+                      <Button
+                        size="lg"
+                        className="bg-nc-red text-white hover:bg-nc-red-light font-display uppercase tracking-wider text-sm px-8 py-6 rounded-sm"
+                        onClick={() => window.open(product.url, "_blank")}
+                      >
+                        Se produktet
+                        <ArrowRight className="ml-2 w-4 h-4" />
+                      </Button>
+                      <span className="text-foreground/40 text-xs hidden sm:block">
+                        Op til 60 dages returret
+                      </span>
+                    </div>
+                  )}
                 </motion.div>
               </div>
             </div>
