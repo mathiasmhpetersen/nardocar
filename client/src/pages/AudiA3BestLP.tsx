@@ -60,7 +60,7 @@ const products = [
     name: "Milltek Cat-Back Audi A3 2.0T FSI quattro",
     tagline: "Britisk præcision til din A3",
     description:
-      "Opgradér din Audi A3 med Millteks legendariske cat-back system. Twin 76.2mm Jet-spidser i T304L rustfrit stål giver en raffineret, sporty lyd uden droneeffekt. EC-godkendt og produceret i England efter ISO 9001.",
+      "Opgradér din Audi A3 med Millteks legendariske cat-back system. Twin 76.2mm Jet-rørhaler i T304L rustfrit stål giver en raffineret, sporty lyd uden droneeffekt. EC-godkendt og produceret i England efter ISO 9001.",
     price: "6.941",
     oldPrice: null,
     currency: "DKK",
@@ -69,14 +69,14 @@ const products = [
     socialProofIcon: Flame,
     urgency: null,
     features: [
-      { icon: Check, text: "Twin 76.2mm Jet udstødningsspidser" },
+      { icon: Check, text: "Twin 76.2mm Jet rørhaler" },
       { icon: ShieldCheck, text: "EC-godkendt" },
       { icon: Check, text: "T304L rustfrit stål" },
       { icon: Check, text: "Produceret i England (ISO 9001)" },
     ],
     specs: [
       { label: "RØRDIAMETER", value: "69.85mm / 2.75\"" },
-      { label: "TIP", value: "76.2mm Jet" },
+      { label: "RØRHALE", value: "76.2mm Jet" },
       { label: "MATERIALE", value: "T304L stål" },
       { label: "MONTERING", value: "1-1,5 timer" },
     ],
@@ -145,7 +145,7 @@ const stats = [
   { value: "4,5/5", label: "TRUSTPILOT" },
   { value: "100%", label: "PRISGARANTI" },
   { value: "3 år", label: "GARANTI*" },
-  { value: "50 dage", label: "RETURRET" },
+  { value: "60 dage", label: "RETURRET" },
 ];
 
 export default function AudiA3BestLP() {
@@ -384,7 +384,7 @@ export default function AudiA3BestLP() {
                       <ArrowRight className="ml-2 w-4 h-4" />
                     </Button>
                     <span className="text-foreground/40 text-xs hidden sm:block">
-                      50 dages fuld returret
+                      Op til 60 dages returret
                     </span>
                   </div>
                 </motion.div>
@@ -449,7 +449,7 @@ export default function AudiA3BestLP() {
               <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
             <p className="text-foreground/40 text-xs mt-4">
-              Gratis fragt over 999,- &middot; 50 dages returret &middot; Dansk kundeservice
+              Op til 60 dages returret &middot; Dansk kundeservice
             </p>
           </motion.div>
         </div>

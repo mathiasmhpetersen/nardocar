@@ -81,7 +81,7 @@ const products = [
       { label: "ÅRGANG", value: "2004-2007" },
     ],
     image: "https://www.nardocar.dk/images/image_db_EVOE904E276S.jpg",
-    url: "https://www.nardocar.dk/shop/ta-technix-sports-bagpotte-bmw-3-serie-e90-e91-77458p.html",
+    url: "https://www.nardocar.dk/shop/sports-bagpotte-bmw-3-serie-e90919293-2005--2012-64187c1.html",
   },
   {
     category: "UNDERVOGN",
@@ -109,14 +109,14 @@ const products = [
       { label: "DÆMPERTYPE", value: "Twin-tube" },
     ],
     image: "https://www.nardocar.dk/images/produkter/ap/AP-Coilovers.webp",
-    url: "https://www.nardocar.dk/shop/ap-gevindundervogn-bmw-3-e90-e92-e90-e92-387p.html",
+    url: "https://www.nardocar.dk/shop/bmw-3-serie-e90-ap-gevindundervogn-18723c1.html",
   },
   {
     category: "CHIPTUNING",
     name: "RaceChip GTS 5 BMW 335i (E90-93)",
     tagline: "+77 HK på 15 minutter",
     description:
-      "Frigør det fulde potentiale i din 335i. RaceChip GTS 5 leverer op til 30% ekstra hestekræfter med TÜV-certificering og 3 års motorgaranti. Plug & play via OBD-porten med app-styring og 7 finjusteringer.",
+      "Frigør det fulde potentiale i din 335i. RaceChip GTS 5 leverer op til 30% ekstra hestekræfter med TÜV-certificering og 2 års motorgaranti. Plug & play med app-styring og 7 finjusteringer.",
     price: "2.944",
     oldPrice: "3.926",
     currency: "DKK",
@@ -126,8 +126,8 @@ const products = [
     urgency: null,
     features: [
       { icon: Check, text: "Op til +77 HK og +105 Nm" },
-      { icon: Check, text: "Plug & play via OBD-port" },
-      { icon: ShieldCheck, text: "3 års motorgaranti" },
+      { icon: Check, text: "Plug & play" },
+      { icon: ShieldCheck, text: "2 års motorgaranti" },
       { icon: Check, text: "App-styring (Bluetooth 5.2)" },
     ],
     specs: [
@@ -137,7 +137,7 @@ const products = [
       { label: "INDSTILLINGER", value: "7 trin" },
     ],
     image: "https://www.nardocar.dk/images/produktgrupper/racechip/gts-5-produkt.webp",
-    url: "https://www.nardocar.dk/shop/racechip-gts5-bmw-3er-e90-93-335i-3432236p.html",
+    url: "https://www.nardocar.dk/shop/bmw-3-serie-e9x-racechip-4439s1.html",
   },
 ];
 
@@ -145,7 +145,7 @@ const stats = [
   { value: "4,5/5", label: "TRUSTPILOT" },
   { value: "100%", label: "PRISGARANTI" },
   { value: "3 år", label: "GARANTI*" },
-  { value: "50 dage", label: "RETURRET" },
+  { value: "60 dage", label: "RETURRET" },
 ];
 
 export default function BMWE90BestLP() {
@@ -384,7 +384,7 @@ export default function BMWE90BestLP() {
                       <ArrowRight className="ml-2 w-4 h-4" />
                     </Button>
                     <span className="text-foreground/40 text-xs hidden sm:block">
-                      50 dages fuld returret
+                      Op til 60 dages returret
                     </span>
                   </div>
                 </motion.div>
@@ -449,7 +449,7 @@ export default function BMWE90BestLP() {
               <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
             <p className="text-foreground/40 text-xs mt-4">
-              Gratis fragt over 999,- &middot; 50 dages returret &middot; Dansk kundeservice
+              Op til 60 dages returret &middot; Dansk kundeservice
             </p>
           </motion.div>
         </div>
