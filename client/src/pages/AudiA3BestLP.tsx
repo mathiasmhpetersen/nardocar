@@ -100,7 +100,7 @@ const products = [
       { icon: Check, text: "Sænkning: 30-60 mm for / 30-55 mm bag" },
       { icon: ShieldCheck, text: "TÜV-certificeret" },
       { icon: Check, text: "Twin-tube teknologi" },
-      { icon: Check, text: "2 års garanti" },
+      { icon: Check, text: "3 års garanti" },
     ],
     specs: [
       { label: "SÆNKNING FOR", value: "30-60 mm" },
