@@ -33,6 +33,13 @@ const LOGO_WHITE =
 
 const SHOP_URL = "https://www.nardocar.dk/shop/audi-a3-8v-2013-2020-biludstyr-213s1.html";
 
+const SHOP_GENERATIONS = [
+  { label: "Audi A3 8L (1996 - 2003)", url: "https://www.nardocar.dk/shop/audi-a3-8l-1996-2003-biludstyr-205s1.html" },
+  { label: "Audi A3 8P (2003 - 2012)", url: "https://www.nardocar.dk/shop/audi-a3-8p-2003-2012-biludstyr-209s1.html" },
+  { label: "Audi A3 8V (2013 - 2020)", url: "https://www.nardocar.dk/shop/audi-a3-8v-2013-2020-biludstyr-213s1.html" },
+  { label: "Audi A3 8Y (2020 - frem)", url: "https://www.nardocar.dk/shop/audi-a3-8v-2013-2020-biludstyr-213s1.html" },
+];
+
 const fadeIn = {
   hidden: { opacity: 0, y: 40 },
   visible: {
@@ -116,7 +123,12 @@ const products = [
     ],
     image: "https://www.nardocar.dk/images/produkter/ap/AP-Coilovers.webp",
     url: "https://www.nardocar.dk/shop/audi-a3-8v-ap-gevindundervogn-11864c1.html",
-    generations: null,
+    generations: [
+      { label: "Audi A3 8L (1996 - 2003)", url: "https://www.nardocar.dk/shop/audi-a3-8l-ap-gevindundervogn-11862c1.html" },
+      { label: "Audi A3 8P (2003 - 2012)", url: "https://www.nardocar.dk/shop/audi-a3-8p-ap-gevindundervogn-11863c1.html" },
+      { label: "Audi A3 8V (2013 - 2020)", url: "https://www.nardocar.dk/shop/audi-a3-8v-ap-gevindundervogn-11864c1.html" },
+      { label: "Audi A3 8Y (2020 - frem)", url: "https://www.nardocar.dk/shop/audi-a3-8y-gevindundervogn-lpge-19462s1.html" },
+    ],
   },
   {
     category: "CHIPTUNING",
@@ -179,6 +191,7 @@ export default function AudiA3BestLP() {
     }
     return init;
   });
+  const [selectedShopGeneration, setSelectedShopGeneration] = useState(SHOP_URL);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -507,14 +520,35 @@ export default function AudiA3BestLP() {
               ))}
             </motion.div>
 
-            <Button
-              size="lg"
-              className="bg-nc-red text-white hover:bg-nc-red-light font-display uppercase tracking-wider text-sm px-10 py-7 rounded-sm text-base"
-              onClick={() => window.open(SHOP_URL, "_blank")}
-            >
-              Se alt til Audi A3
-              <ArrowRight className="ml-2 w-5 h-5" />
-            </Button>
+            <div className="max-w-xl mx-auto">
+              <p className="text-muted-foreground text-[10px] uppercase tracking-wider font-display mb-2">
+                Vælg din A3-generation
+              </p>
+              <div className="flex flex-col sm:flex-row gap-3 items-stretch">
+                <div className="relative flex-1 min-w-0">
+                  <select
+                    value={selectedShopGeneration}
+                    onChange={(e) => setSelectedShopGeneration(e.target.value)}
+                    className="w-full appearance-none bg-card border border-border/50 text-foreground px-4 py-3 pr-10 rounded-sm font-display text-sm focus:outline-none focus:border-nc-red cursor-pointer text-left"
+                  >
+                    {SHOP_GENERATIONS.map((gen) => (
+                      <option key={gen.label} value={gen.url}>
+                        {gen.label}
+                      </option>
+                    ))}
+                  </select>
+                  <ChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4 text-foreground/60 pointer-events-none" />
+                </div>
+                <Button
+                  size="lg"
+                  className="bg-nc-red text-white hover:bg-nc-red-light font-display uppercase tracking-wider text-sm px-8 py-6 rounded-sm"
+                  onClick={() => window.open(selectedShopGeneration, "_blank")}
+                >
+                  Se alt til Audi A3
+                  <ArrowRight className="ml-2 w-5 h-5" />
+                </Button>
+              </div>
+            </div>
             <p className="text-foreground/40 text-xs mt-4">
               Op til 60 dages returret &middot; Dansk kundeservice
             </p>
