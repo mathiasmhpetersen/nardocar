@@ -17,6 +17,13 @@ const pages = [
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663451266806/TpSm9K3DjQUQomASPiH9zw/white-golf-gti-headlight_f066fbc7.jpg",
   },
   {
+    path: "/jason-story",
+    title: "Jason — Golf 7 GTI",
+    subtitle: "Solution / Product Aware",
+    description: "Ejerhistorie om en 22-årig der vil bygge en ordentlig banebil. Antagonist: billig undervogn og hjemmesvejset udstødning. Mekanisme: kvalitet med godkendelserne i orden.",
+    image: "/images/jason-hero-faf.jpg",
+  },
+  {
     path: "/aesthetic",
     title: "The Aesthetic Permission Slip",
     subtitle: "Problem Unaware",
