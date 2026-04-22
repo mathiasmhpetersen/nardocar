@@ -83,7 +83,7 @@ const products = [
       { label: "PRODUKTION", value: "Limité" },
     ],
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663451266806/iBJypn5FUvZrT5PKAAfZMN/scorpion-catback_1642af8e.jpeg",
-    url: "https://www.nardocar.dk/shop/scorpion-non-resonated-cat-back-system-vw-mk7-golf-gti-including-clubsport-clubsport-s-ascari-1674848p.html",
+    url: "https://www.nardocar.dk/shop/scorpion-catback-vw-golf-7-2012-2019-69794c1.html",
   },
   {
     category: "UNDERVOGN",
@@ -111,7 +111,7 @@ const products = [
       { label: "DÆMPERTYPE", value: "Twin-tube" },
     ],
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663451266806/iBJypn5FUvZrT5PKAAfZMN/ap-gevindundervogn_e741289d.jpeg",
-    url: "https://www.nardocar.dk/shop/ap-gevindundervogn-vw-golf-7-au-420p.html",
+    url: "https://www.nardocar.dk/shop/vw-golf-vii-ap-gevindundervogn-11977c1.html",
   },
   {
     category: "CHIPTUNING",

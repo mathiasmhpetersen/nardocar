@@ -30,7 +30,7 @@ import { useRef, useState, useEffect } from "react";
 const LOGO_WHITE =
   "https://d2xsxph8kpxj0f.cloudfront.net/310519663451266806/Erre6hcnrPtPVTwXw7nEHY/nardocar-white_7eff51c9.png";
 
-const SHOP_URL = "https://www.nardocar.dk/shop/audi-a3-biludstyr-204s1.html";
+const SHOP_URL = "https://www.nardocar.dk/shop/audi-a3-8v-2013-2020-biludstyr-213s1.html";
 
 const fadeIn = {
   hidden: { opacity: 0, y: 40 },
@@ -81,7 +81,7 @@ const products = [
       { label: "MONTERING", value: "1-1,5 timer" },
     ],
     image: "https://www.nardocar.dk/images/produkter/milltek/SSXVW045_1.webp",
-    url: "https://www.nardocar.dk/shop/milltek-cat-back-audi-a3-ssxvw045-31116p.html",
+    url: "https://www.nardocar.dk/shop/milltek-catback-audi-a3-8v-2013-2020-63502c1.html",
   },
   {
     category: "UNDERVOGN",
@@ -109,7 +109,7 @@ const products = [
       { label: "DÆMPERTYPE", value: "Twin-tube" },
     ],
     image: "https://www.nardocar.dk/images/produkter/ap/AP-Coilovers.webp",
-    url: "https://www.nardocar.dk/shop/ap-gevindundervogn-audi-a3-8v-440p.html",
+    url: "https://www.nardocar.dk/shop/audi-a3-8v-ap-gevindundervogn-11864c1.html",
   },
   {
     category: "CHIPTUNING",
@@ -137,7 +137,7 @@ const products = [
       { label: "INDSTILLINGER", value: "6 trin" },
     ],
     image: "https://www.nardocar.dk/images/produkter/racechip/rs/product-rs.png",
-    url: "https://www.nardocar.dk/shop/racechip-rs-audi-a3-8v-1-5-tfsi-661489p.html",
+    url: "https://www.nardocar.dk/shop/audi-a3-8v-racechip-4401s1.html",
   },
 ];
 

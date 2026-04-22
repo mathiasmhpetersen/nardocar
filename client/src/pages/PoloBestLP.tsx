@@ -30,7 +30,7 @@ import { useRef, useState, useEffect } from "react";
 const LOGO_WHITE =
   "https://d2xsxph8kpxj0f.cloudfront.net/310519663451266806/Erre6hcnrPtPVTwXw7nEHY/nardocar-white_7eff51c9.png";
 
-const SHOP_URL = "https://www.nardocar.dk/shop/vw-polo-biludstyr-11591s1.html";
+const SHOP_URL = "https://www.nardocar.dk/shop/vw-polo-6r-6c-2008-2017-biludstyr-11604s1.html";
 
 const fadeIn = {
   hidden: { opacity: 0, y: 40 },
@@ -79,7 +79,7 @@ const products = [
       { label: "GARANTI", value: "Livstid" },
     ],
     image: "https://www.nardocar.dk/images/produkter/scorpion/SVWS051_3QUARTER-1200x800.webp",
-    url: "https://www.nardocar.dk/shop/scorpion-non-resonated-cat-back-system-vw-polo-gti-6c-daytona-twin-1603391p.html",
+    url: "https://www.nardocar.dk/shop/scorpion-catback-vw-polo-6r6c-2008-2017-69773c1.html",
   },
   {
     category: "UNDERVOGN",
@@ -107,7 +107,7 @@ const products = [
       { label: "DÆMPERTYPE", value: "TwinTube" },
     ],
     image: "https://www.nardocar.dk/images/produkter/KW/ST-X-Coliovers.jpg",
-    url: "https://www.nardocar.dk/shop/st-x-gevindundervogn-vw-polo-6r-61614p.html",
+    url: "https://www.nardocar.dk/shop/st-x-gevindundervogn-vw-polo-type-6r-19125c1.html",
   },
   {
     category: "CHIPTUNING",
@@ -135,7 +135,7 @@ const products = [
       { label: "INDSTILLINGER", value: "6 trin" },
     ],
     image: "https://www.nardocar.dk/images/produkter/racechip/rs/product-rs.png",
-    url: "https://www.nardocar.dk/shop/racechip-rs-vw-polo-v-1-2-tsi-666826p.html",
+    url: "https://www.nardocar.dk/shop/vw-polo-6r-racechip-16617s1.html",
   },
 ];
 

@@ -30,7 +30,7 @@ import { useRef, useState, useEffect } from "react";
 const LOGO_WHITE =
   "https://d2xsxph8kpxj0f.cloudfront.net/310519663451266806/Erre6hcnrPtPVTwXw7nEHY/nardocar-white_7eff51c9.png";
 
-const SHOP_URL = "https://www.nardocar.dk/shop/undervogn-bmw-3-serie-e90-e91-e92-e93-2005-2012-24518s1.html";
+const SHOP_URL = "https://www.nardocar.dk/shop/bmw-3-serie-e90-91-92-93-2005--2012-biludstyr-574s1.html";
 
 const fadeIn = {
   hidden: { opacity: 0, y: 40 },
