@@ -13,6 +13,8 @@ const FRONT_DETAIL_IMG = "/images/jason-front-detail.jpg"; /* A7404823 — front
 const SIDE_SUNSET_IMG = "/images/jason-side-sunset.jpg"; /* A7404826 — sunset side profile */
 const REAR_IMG = "/images/jason-rear-water.jpg";         /* A7404829 — rear 3/4 at water */
 const FRONT_CLOSE_IMG = "/images/jason-front-water.jpg"; /* A7404833 — front close, VW logo */
+const LOGO_WHITE =
+  "https://d2xsxph8kpxj0f.cloudfront.net/310519663451266806/Erre6hcnrPtPVTwXw7nEHY/nardocar-white_7eff51c9.png";
 
 export default function JasonStoryLP() {
   const rootRef = useRef<HTMLDivElement>(null);
@@ -307,11 +309,48 @@ export default function JasonStoryLP() {
         <hr className="js-hairline" />
       </section>
 
+      {/* CTA */}
+      <section className="js-cta" data-reveal>
+        <h2 className="js-cta-title">
+          Find delene til <span className="js-cta-title-red">dit næste build</span>
+        </h2>
+        <p className="js-cta-sub">
+          Udstødning, undervogn, chiptuning og mere — alt samlet ét sted.
+        </p>
+        <a
+          href="https://nardocar.dk"
+          className="js-cta-btn"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          Udforsk shoppen
+          <svg
+            className="js-cta-arrow"
+            viewBox="0 0 16 16"
+            width="16"
+            height="16"
+            aria-hidden="true"
+          >
+            <path
+              d="M2 8h11M9 4l4 4-4 4"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
+        </a>
+      </section>
+
       {/* Footer */}
       <footer className="js-footer">
-        <span className="js-wordmark">
-          NARDO<span className="js-wordmark-red">CAR</span>
-        </span>
+        <img
+          src={LOGO_WHITE}
+          alt="Nardocar"
+          className="js-footer-logo"
+          loading="lazy"
+        />
         <span className="js-footer-right">Own Your Drive · nardocar.dk</span>
       </footer>
     </div>
@@ -547,15 +586,18 @@ const css = `
 
 /* ── FULL-BLEED PHOTO ── */
 .js-fullbleed {
-  margin: 0;
+  margin: 0 auto;
   width: 100%;
+  max-width: 1200px;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
 }
 .js-fullbleed--last {
   margin-bottom: 0;
 }
 .js-img {
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
   filter: contrast(1.08) saturate(0.82);
 }
@@ -563,6 +605,8 @@ const css = `
 /* ── TWO-UP PHOTO PAIR ── */
 .js-twoup {
   width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2px;
@@ -645,24 +689,71 @@ const css = `
   margin: 0;
 }
 
+/* ── CTA ── */
+.js-cta {
+  max-width: 820px;
+  margin: 72px auto 0 auto;
+  padding: 40px 24px 56px 24px;
+  text-align: center;
+}
+.js-cta-title {
+  font-family: "Saira Condensed", "Inter", sans-serif;
+  font-style: italic;
+  font-weight: 800;
+  font-size: clamp(34px, 5vw, 64px);
+  line-height: 1.02;
+  letter-spacing: -0.01em;
+  color: var(--white);
+  margin: 0 0 20px 0;
+}
+.js-cta-title-red { color: var(--red); }
+.js-cta-sub {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--muted);
+  margin: 0 0 32px 0;
+}
+.js-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--red);
+  color: var(--white);
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 16px 28px;
+  border-radius: 2px;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+.js-cta-btn:hover {
+  background: #e60000;
+  transform: translateY(-1px);
+}
+.js-cta-arrow {
+  transition: transform 0.2s ease;
+}
+.js-cta-btn:hover .js-cta-arrow { transform: translateX(3px); }
+
 /* ── FOOTER ── */
 .js-footer {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
-  padding: 28px 32px 36px 32px;
+  align-items: center;
+  padding: 32px 32px 40px 32px;
   gap: 16px;
+  border-top: 1px solid var(--hairline);
+  margin-top: 48px;
 }
-.js-wordmark {
-  font-family: "Saira Condensed", "Inter", sans-serif;
-  font-style: italic;
-  font-weight: 900;
-  font-size: 22px;
-  letter-spacing: -0.01em;
-  color: var(--white);
-  line-height: 1;
+.js-footer-logo {
+  height: 22px;
+  width: auto;
+  opacity: 0.8;
 }
-.js-wordmark-red { color: var(--red); }
 .js-footer-right {
   font-family: "Inter", sans-serif;
   font-weight: 500;
@@ -691,6 +782,16 @@ const css = `
   .js-p--opener, .js-p--lifted { font-size: 19px; }
   .js-dropcap { font-size: 76px; padding-right: 10px; }
   .js-tail { margin-top: 64px; }
-  .js-footer { padding: 22px 20px 28px 20px; }
+  .js-cta { padding: 24px 20px 40px 20px; margin-top: 48px; }
+  .js-cta-sub { font-size: 15px; }
+  .js-cta-btn { font-size: 12px; padding: 14px 22px; }
+  .js-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 24px 20px 32px 20px;
+    margin-top: 32px;
+  }
+  .js-footer-logo { height: 18px; }
 }
 `;
