@@ -127,7 +127,6 @@ const products = [
       { label: "Audi A3 8L (1996 - 2003)", url: "https://www.nardocar.dk/shop/audi-a3-8l-ap-gevindundervogn-11862c1.html" },
       { label: "Audi A3 8P (2003 - 2012)", url: "https://www.nardocar.dk/shop/audi-a3-8p-ap-gevindundervogn-11863c1.html" },
       { label: "Audi A3 8V (2013 - 2020)", url: "https://www.nardocar.dk/shop/audi-a3-8v-ap-gevindundervogn-11864c1.html" },
-      { label: "Audi A3 8Y (2020 - frem)", url: "https://www.nardocar.dk/shop/audi-a3-8y-gevindundervogn-lpge-19462s1.html" },
     ],
   },
   {
