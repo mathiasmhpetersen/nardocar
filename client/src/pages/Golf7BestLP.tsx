@@ -62,7 +62,7 @@ const products = [
     name: "Scorpion Cat-Back System",
     tagline: "Den lyd du har drømt om",
     description:
-      "Naboerne vender sig om. Din Golf GTI får en dyb, aggressiv motorsportslyd der føles i mellemgulvet — uden droneeffekt på motorvejen. Håndlavet i England af T304 rustfrit stål med livstidsgaranti.",
+      "Naboerne vender sig om. Din Golf GTI får en dyb, aggressiv motorsportslyd der føles i mellemgulvet. Håndlavet i England af T304 rustfrit stål med livstidsgaranti.",
     price: "9.920",
     oldPrice: null,
     currency: "DKK",
@@ -118,7 +118,7 @@ const products = [
     name: "RaceChip RS",
     tagline: "+65 HK på 15 minutter",
     description:
-      "Tryk på speeder og mærk forskellen med det samme. RaceChip RS frigør op til 30% ekstra hestekræfter via OBD-porten — ingen mekaniker nødvendig. Tysk ingeniørkunst med app-styring og 5 års motorgaranti.",
+      "Tryk på speeder og mærk forskellen med det samme. RaceChip RS frigør op til 30% ekstra hestekræfter via plug & play — ingen mekaniker nødvendig. Tysk ingeniørkunst med app-styring og 1 års motorgaranti.",
     price: "3.499",
     oldPrice: null,
     currency: "DKK",
@@ -128,14 +128,14 @@ const products = [
     urgency: null,
     features: [
       { icon: Check, text: "Op til +65 HK og +95 Nm" },
-      { icon: Check, text: "Plug & play via OBD-port" },
-      { icon: ShieldCheck, text: "5 års motorgaranti" },
+      { icon: Check, text: "Plug & play" },
+      { icon: ShieldCheck, text: "1 års motorgaranti" },
       { icon: Check, text: "App-styring (Bluetooth)" },
     ],
     specs: [
       { label: "EFFEKT", value: "+30% HK" },
       { label: "MONTERING", value: "Plug & play" },
-      { label: "GARANTI", value: "5 år" },
+      { label: "GARANTI", value: "1 år" },
       { label: "STYRING", value: "App" },
     ],
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663451266806/iBJypn5FUvZrT5PKAAfZMN/racechip-rs-product_a5cce0f8.png",
@@ -147,7 +147,7 @@ const stats = [
   { value: "4,5/5", label: "TRUSTPILOT" },
   { value: "100%", label: "PRISGARANTI" },
   { value: "3 år", label: "GARANTI*" },
-  { value: "50 dage", label: "RETURRET" },
+  { value: "60 dage", label: "RETURRET" },
 ];
 
 export default function Golf7BestLP() {
@@ -407,7 +407,7 @@ export default function Golf7BestLP() {
                       <ArrowRight className="ml-2 w-4 h-4" />
                     </Button>
                     <span className="text-foreground/40 text-xs hidden sm:block">
-                      50 dages fuld returret
+                      Op til 60 dages returret
                     </span>
                   </div>
                 </motion.div>
@@ -477,7 +477,7 @@ export default function Golf7BestLP() {
               <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
             <p className="text-foreground/40 text-xs mt-4">
-              Gratis fragt over 999,- &middot; 50 dages returret &middot; Dansk kundeservice
+              Op til 60 dages returret &middot; Dansk kundeservice
             </p>
           </motion.div>
         </div>

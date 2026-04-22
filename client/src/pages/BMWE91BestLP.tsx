@@ -60,7 +60,7 @@ const products = [
     name: "TA Technix Udstødningssystem BMW E90/E91",
     tagline: "Motorsportslyd til din Touring",
     description:
-      "Forvandl din E91 Touring med et komplet udstødningssystem i rustfrit stål. TA Technix systemet med 2x70mm spidser giver en dyb, aggressiv lyd der matcher BMW-ånden. Designet til 325i og 330i motorer.",
+      "Forvandl din E91 Touring med et komplet udstødningssystem i rustfrit stål. TA Technix systemet med 2x70mm rørhaler giver en dyb, aggressiv lyd der matcher BMW-ånden. Designet til 325i og 330i motorer.",
     price: "6.659",
     oldPrice: null,
     currency: "DKK",
@@ -69,13 +69,13 @@ const products = [
     socialProofIcon: Flame,
     urgency: null,
     features: [
-      { icon: Check, text: "2x70mm udstødningsspidser" },
+      { icon: Check, text: "2x70mm rørhaler" },
       { icon: Check, text: "3 års garanti" },
       { icon: Check, text: "Rustfrit stål" },
       { icon: Check, text: "Passer 325i/330i (2.5/3.0L)" },
     ],
     specs: [
-      { label: "SPIDSER", value: "2x70mm" },
+      { label: "RØRHALER", value: "2x70mm" },
       { label: "MATERIALE", value: "Rustfrit stål" },
       { label: "GARANTI", value: "3 år" },
       { label: "FRA ÅRGANG", value: "03/2007" },
@@ -116,7 +116,7 @@ const products = [
     name: "RaceChip GTS 5 BMW 325d (E90-93)",
     tagline: "+33 HK og +105 Nm ekstra",
     description:
-      "Frigør det fulde potentiale i din 325d. RaceChip GTS 5 leverer op til 30% ekstra hestekræfter med TÜV-certificering og 3 års motorgaranti. Plug & play med app-styring og 7 finjusteringer.",
+      "Frigør det fulde potentiale i din 325d. RaceChip GTS 5 leverer op til 30% ekstra hestekræfter med TÜV-certificering og 2 års motorgaranti. Plug & play med app-styring og 7 finjusteringer.",
     price: "2.778",
     oldPrice: "3.704",
     currency: "DKK",
@@ -126,8 +126,8 @@ const products = [
     urgency: null,
     features: [
       { icon: Check, text: "Op til +33 HK og +105 Nm" },
-      { icon: Check, text: "Plug & play via OBD-port" },
-      { icon: ShieldCheck, text: "3 års motorgaranti" },
+      { icon: Check, text: "Plug & play" },
+      { icon: ShieldCheck, text: "2 års motorgaranti" },
       { icon: Check, text: "App-styring (Bluetooth 5.2)" },
     ],
     specs: [
@@ -145,7 +145,7 @@ const stats = [
   { value: "4,5/5", label: "TRUSTPILOT" },
   { value: "100%", label: "PRISGARANTI" },
   { value: "3 år", label: "GARANTI*" },
-  { value: "50 dage", label: "RETURRET" },
+  { value: "60 dage", label: "RETURRET" },
 ];
 
 export default function BMWE91BestLP() {
@@ -384,7 +384,7 @@ export default function BMWE91BestLP() {
                       <ArrowRight className="ml-2 w-4 h-4" />
                     </Button>
                     <span className="text-foreground/40 text-xs hidden sm:block">
-                      50 dages fuld returret
+                      Op til 60 dages returret
                     </span>
                   </div>
                 </motion.div>
@@ -449,7 +449,7 @@ export default function BMWE91BestLP() {
               <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
             <p className="text-foreground/40 text-xs mt-4">
-              Gratis fragt over 999,- &middot; 50 dages returret &middot; Dansk kundeservice
+              Op til 60 dages returret &middot; Dansk kundeservice
             </p>
           </motion.div>
         </div>

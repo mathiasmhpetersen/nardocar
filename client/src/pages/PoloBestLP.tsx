@@ -143,7 +143,7 @@ const stats = [
   { value: "4,5/5", label: "TRUSTPILOT" },
   { value: "100%", label: "PRISGARANTI" },
   { value: "3 år", label: "GARANTI*" },
-  { value: "50 dage", label: "RETURRET" },
+  { value: "60 dage", label: "RETURRET" },
 ];
 
 export default function PoloBestLP() {
@@ -391,7 +391,7 @@ export default function PoloBestLP() {
                       <ArrowRight className="ml-2 w-4 h-4" />
                     </Button>
                     <span className="text-foreground/40 text-xs hidden sm:block">
-                      50 dages fuld returret
+                      Op til 60 dages returret
                     </span>
                   </div>
                 </motion.div>
@@ -459,7 +459,7 @@ export default function PoloBestLP() {
               <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
             <p className="text-foreground/40 text-xs mt-4">
-              Gratis fragt over 999,- &middot; 50 dages returret &middot; Dansk kundeservice
+              Op til 60 dages returret &middot; Dansk kundeservice
             </p>
           </motion.div>
         </div>
