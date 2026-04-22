@@ -117,13 +117,12 @@ export default function JasonStoryLP() {
         </div>
       </section>
 
-      {/* ───────── READING 1 — opener with drop cap ───────── */}
+      {/* ───────── READING 1 — opener ───────── */}
       <section className="js-read js-read--first">
         <p className="js-p js-p--opener" data-reveal>
-          <span className="js-dropcap">J</span>eg købte min Golf 7 GTI som
-          22-årig. Det er min 7. bil, og jeg har efterhånden haft lidt af hvert.
-          Bilerne har jeg købt for penge jeg sparede op på arbejde ved siden af
-          min læreplads.
+          Jeg købte min Golf 7 GTI som 22-årig. Det er min 7. bil, og jeg har
+          efterhånden haft lidt af hvert. Bilerne har jeg købt for penge jeg
+          sparede op på arbejde ved siden af min læreplads.
         </p>
         <p className="js-p" data-reveal>
           Bilen har aldrig været en drømmebil for mig, men en bil jeg har set
@@ -290,25 +289,6 @@ export default function JasonStoryLP() {
         />
       </figure>
 
-      {/* Tail — only commercial line */}
-      <section className="js-tail">
-        <p className="js-tail-line">
-          <em>
-            Jason køber sine dele hos{" "}
-            <a
-              href="https://nardocar.dk"
-              className="js-tail-link"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              nardo
-            </a>
-            .
-          </em>
-        </p>
-        <hr className="js-hairline" />
-      </section>
-
       {/* CTA */}
       <section className="js-cta" data-reveal>
         <h2 className="js-cta-title">
@@ -460,12 +440,11 @@ const css = `
   max-width: 860px;
 }
 .js-h1 {
-  font-family: "Saira Condensed", "Inter", sans-serif;
-  font-style: italic;
-  font-weight: 800;
+  font-family: "Poppins", "Inter", sans-serif;
+  font-weight: 700;
   font-size: clamp(38px, 6vw, 88px);
-  line-height: 1.0;
-  letter-spacing: -0.01em;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
   color: var(--white);
   margin: 0;
   max-width: 14ch;
@@ -573,17 +552,6 @@ const css = `
   padding-top: 16px;
 }
 
-.js-dropcap {
-  float: left;
-  font-family: "Saira Condensed", "Inter", sans-serif;
-  font-style: italic;
-  font-weight: 900;
-  font-size: 96px;
-  line-height: 0.82;
-  color: var(--red);
-  padding: 6px 14px 0 0;
-}
-
 /* ── FULL-BLEED PHOTO ── */
 .js-fullbleed {
   margin: 0 auto;
@@ -630,11 +598,11 @@ const css = `
   text-align: left;
 }
 .js-pull-line {
-  font-family: "Saira Condensed", "Inter", sans-serif;
-  font-style: italic;
+  font-family: "Poppins", "Inter", sans-serif;
   font-weight: 700;
   font-size: clamp(30px, 4.5vw, 56px);
-  line-height: 1.04;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
   color: var(--white);
   margin: 0 0 8px 0;
 }
@@ -658,37 +626,6 @@ const css = `
   background: var(--red);
 }
 
-/* ── TAIL ── */
-.js-tail {
-  max-width: 640px;
-  margin: 96px auto 0 auto;
-  padding: 0 24px 28px 24px;
-}
-.js-tail-line {
-  font-family: "Inter", sans-serif;
-  font-size: 14px;
-  line-height: 1.7;
-  color: var(--muted);
-  margin: 0 0 22px 0;
-}
-.js-tail-link {
-  color: var(--paper);
-  text-decoration: none;
-  border-bottom: 1px solid rgba(255, 0, 0, 0.45);
-  padding-bottom: 1px;
-  transition: border-color 0.25s ease, color 0.25s ease;
-}
-.js-tail-link:hover {
-  border-bottom-color: var(--red);
-  color: var(--white);
-}
-.js-hairline {
-  border: 0;
-  height: 1px;
-  background: var(--hairline);
-  margin: 0;
-}
-
 /* ── CTA ── */
 .js-cta {
   max-width: 820px;
@@ -697,12 +634,11 @@ const css = `
   text-align: center;
 }
 .js-cta-title {
-  font-family: "Saira Condensed", "Inter", sans-serif;
-  font-style: italic;
-  font-weight: 800;
+  font-family: "Poppins", "Inter", sans-serif;
+  font-weight: 700;
   font-size: clamp(34px, 5vw, 64px);
-  line-height: 1.02;
-  letter-spacing: -0.01em;
+  line-height: 1.08;
+  letter-spacing: -0.02em;
   color: var(--white);
   margin: 0 0 20px 0;
 }
@@ -780,8 +716,6 @@ const css = `
   .js-pull + .js-read { margin-top: 56px; }
   .js-p { font-size: 17px; }
   .js-p--opener, .js-p--lifted { font-size: 19px; }
-  .js-dropcap { font-size: 76px; padding-right: 10px; }
-  .js-tail { margin-top: 64px; }
   .js-cta { padding: 24px 20px 40px 20px; margin-top: 48px; }
   .js-cta-sub { font-size: 15px; }
   .js-cta-btn { font-size: 12px; padding: 14px 22px; }
